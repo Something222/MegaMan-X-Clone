@@ -1,0 +1,4222 @@
+fileFormatVersion: 2
+guid: ce452185ccd7dfe42a735f763d6d52b0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8275215807569772898
+    second: X_Spawn_1
+  - first:
+      213: 1569687043852750794
+    second: X_Spawn_2
+  - first:
+      213: -5947057775011204952
+    second: X_Spawn_3
+  - first:
+      213: 4359341611158489564
+    second: X_Spawn_4
+  - first:
+      213: -2699651407469106485
+    second: X_Spawn_5
+  - first:
+      213: -5631298107776949067
+    second: X_Spawn_6
+  - first:
+      213: 3045898829599962264
+    second: X_Spawn_7
+  - first:
+      213: 4241762932913455183
+    second: X_Idle_1
+  - first:
+      213: 3905790134124882945
+    second: X_Idle_2
+  - first:
+      213: 805451135627719435
+    second: X_Idle_3
+  - first:
+      213: -39041233830164002
+    second: X_Shooting_1
+  - first:
+      213: -367860172718985011
+    second: X_Shooting_2
+  - first:
+      213: -3746399846023555399
+    second: X_Jumping_1
+  - first:
+      213: -5971788608208487460
+    second: X_Jumping_2
+  - first:
+      213: 6742421786836996630
+    second: X_Jumping_3
+  - first:
+      213: -2107186227288995316
+    second: X_Falling_1
+  - first:
+      213: -4009975772689008882
+    second: X_Falling_2(Stalling)
+  - first:
+      213: 1541789375935020316
+    second: X_Landing_1
+  - first:
+      213: 8739881349785672437
+    second: X_Landing_2
+  - first:
+      213: 432841062171859261
+    second: X_Running_1
+  - first:
+      213: 3998097717663252436
+    second: X_Running_2
+  - first:
+      213: 6608097216296372197
+    second: X_Running_3
+  - first:
+      213: 2964827867284634146
+    second: X_Running_4
+  - first:
+      213: -3638424227271834095
+    second: X_Running_5
+  - first:
+      213: -2014199996682175501
+    second: X_Running_6
+  - first:
+      213: -6481169699995102556
+    second: X_Running_7
+  - first:
+      213: 1627295576087637273
+    second: X_Running_8
+  - first:
+      213: -3848671091392155332
+    second: X_Running_9
+  - first:
+      213: 6036186013661055811
+    second: X_Running_10
+  - first:
+      213: 156596308042546247
+    second: X_Running_11
+  - first:
+      213: 5518574851321293383
+    second: X_Jumping_Shooting_1
+  - first:
+      213: 6340451259414969232
+    second: X_Jumping_Shooting_2
+  - first:
+      213: -5015493267286110935
+    second: X_Jumping_Shooting_3
+  - first:
+      213: -8421613525851879855
+    second: X_Falling_Shooting_1
+  - first:
+      213: 1388162244853437882
+    second: X_Falling_Shooting_2
+  - first:
+      213: -7733169954851900337
+    second: X_Landing_Shooting_1
+  - first:
+      213: 4468043689094298051
+    second: X_Landing_Shooting_2
+  - first:
+      213: -5586875657744424351
+    second: X_Dash_1
+  - first:
+      213: -3118886462986596287
+    second: X_Dash_2
+  - first:
+      213: 5812115724236322110
+    second: X_Dash_Shooting_1
+  - first:
+      213: -2258981940744366993
+    second: X_Dash_Shooting_2
+  - first:
+      213: -723962108645300327
+    second: X_Running_Shooting_1
+  - first:
+      213: 6930839672237445435
+    second: X_Running_Shooting_2
+  - first:
+      213: -1650199128166344340
+    second: X_Running_Shooting_3
+  - first:
+      213: -2837885269924438755
+    second: X_Running_Shooting_4
+  - first:
+      213: -8071558325125455956
+    second: X_Running_Shooting_5
+  - first:
+      213: 4770552154747507765
+    second: X_Running_Shooting_6
+  - first:
+      213: 8278582106160887136
+    second: X_Running_Shooting_7
+  - first:
+      213: 2077507241183044705
+    second: X_Running_Shooting_8
+  - first:
+      213: -8395032991310046991
+    second: X_Running_Shooting_9
+  - first:
+      213: 6729917974715890369
+    second: X_Running_Shooting_10
+  - first:
+      213: 2376852335881667106
+    second: X_Running_Shooting_11
+  - first:
+      213: 1382080632382505563
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_52
+  - first:
+      213: 40726476308689357
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_53
+  - first:
+      213: -9067521600300039035
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_54
+  - first:
+      213: 4204929360528370395
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_55
+  - first:
+      213: 8613500457135129028
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_56
+  - first:
+      213: 4934492679797143964
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_57
+  - first:
+      213: -7154054353449039633
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_58
+  - first:
+      213: -6900745247822656890
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_59
+  - first:
+      213: 4271909295247617505
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_60
+  - first:
+      213: -3721735295953783322
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_61
+  - first:
+      213: -6286893852654657281
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_62
+  - first:
+      213: 1705064104542606933
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_63
+  - first:
+      213: 1588644301608198852
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_64
+  - first:
+      213: -3097360023151595810
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_65
+  - first:
+      213: -8251790203483372294
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_66
+  - first:
+      213: 3821478519662674457
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_67
+  - first:
+      213: -6072169130840033593
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_68
+  - first:
+      213: -8934627968195903616
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_69
+  - first:
+      213: -8356724405181544575
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_70
+  - first:
+      213: 5433412341325818788
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_71
+  - first:
+      213: -9161095421114910655
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_72
+  - first:
+      213: 3526401819090571583
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_73
+  - first:
+      213: -2423404245990587002
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_74
+  - first:
+      213: -2882356448815008826
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_75
+  - first:
+      213: -9034008050084189937
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_76
+  - first:
+      213: 581854308716131387
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_77
+  - first:
+      213: -7389047581167705403
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_78
+  - first:
+      213: 5744201428719216772
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_79
+  - first:
+      213: -4244604646836507724
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_80
+  - first:
+      213: 8788466891630128106
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_81
+  - first:
+      213: 5740954780508197911
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_82
+  - first:
+      213: 5012651031365872861
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_83
+  - first:
+      213: -8904373821019202744
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_84
+  - first:
+      213: 4533810822546814831
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_85
+  - first:
+      213: 7057772448645549799
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_86
+  - first:
+      213: 3777757159434163028
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_87
+  - first:
+      213: 1957704709600528452
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_88
+  - first:
+      213: -2928733096616196230
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_89
+  - first:
+      213: 5792364029510830792
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_90
+  - first:
+      213: -8473653613752798127
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_91
+  - first:
+      213: -821314767082662445
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_92
+  - first:
+      213: -4277552616176816840
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_93
+  - first:
+      213: -2063485697661008400
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_94
+  - first:
+      213: 395904175599248098
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_95
+  - first:
+      213: -4185167734331079779
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_96
+  - first:
+      213: 2617577117195097972
+    second: X_WallSlide_1
+  - first:
+      213: 8292609371616864735
+    second: X_WallSlide_2
+  - first:
+      213: -6573369589955152456
+    second: X_WallSlide_3(Stalling)
+  - first:
+      213: 5858099560676347263
+    second: X_WallSlide_4
+  - first:
+      213: 7689000667171177675
+    second: X_WallSlide_5
+  - first:
+      213: 7469683765211319048
+    second: X_WallSlide_Shooting_1
+  - first:
+      213: -922725598359093502
+    second: X_WallSlide_Shooting_2
+  - first:
+      213: 938876466784893962
+    second: X_WallSlide_Shooting_3(Stalling)
+  - first:
+      213: -6526034170925964704
+    second: X_WallSlide_Shooting_4
+  - first:
+      213: -1455223949298507465
+    second: X_WallSlide_Shooting_5
+  - first:
+      213: 5693942283480026223
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_107
+  - first:
+      213: 2199237473988914596
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_108
+  - first:
+      213: 7443974786986776420
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_109
+  - first:
+      213: -6142765793016571226
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_110
+  - first:
+      213: -5799815288859399346
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_111
+  - first:
+      213: -2943323164138844828
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_112
+  - first:
+      213: -4519182306733380802
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_113
+  - first:
+      213: -5023605935428946994
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_114
+  - first:
+      213: -7321589380384275288
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_115
+  - first:
+      213: -5699346885960700219
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_116
+  - first:
+      213: 6371418157218647631
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_117
+  - first:
+      213: 7879629520121876111
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_118
+  - first:
+      213: 488802158075811574
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_119
+  - first:
+      213: -2389075366565232085
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_120
+  - first:
+      213: -6814261650602335367
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_121
+  - first:
+      213: 8747048796993847760
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_122
+  - first:
+      213: -6770861956696505229
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_123
+  - first:
+      213: -6825244831079434768
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_124
+  - first:
+      213: 7185093552808085814
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_125
+  - first:
+      213: -2438013082245138284
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_126
+  - first:
+      213: 4311263767432435999
+    second: X_Damaged_1
+  - first:
+      213: -462530989074487073
+    second: X_Damaged_2
+  - first:
+      213: -1611308494817078976
+    second: X_Damaged_3
+  - first:
+      213: -8085938266004591251
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_130
+  - first:
+      213: -6264309799147163089
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_131
+  - first:
+      213: 6294148176076357171
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_132
+  - first:
+      213: -1601380421700113799
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_133
+  - first:
+      213: -4732570227367471883
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_134
+  - first:
+      213: -3687161749298022367
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_135
+  - first:
+      213: 9000488052453876994
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_136
+  - first:
+      213: 4286021269101602069
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_137
+  - first:
+      213: -4805088959854786115
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_138
+  - first:
+      213: 2272470256197052993
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_139
+  - first:
+      213: -5165763004523400749
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_140
+  - first:
+      213: 5864207279267295003
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_141
+  - first:
+      213: -1099005798166092276
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_142
+  - first:
+      213: 3722089275840638645
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_143
+  - first:
+      213: -419550881960408881
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_144
+  - first:
+      213: -5318307994195019416
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_145
+  - first:
+      213: 6839799163714063401
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_146
+  - first:
+      213: -2941532479855296240
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_147
+  - first:
+      213: -1685422251124846628
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_148
+  - first:
+      213: -4159365283170625742
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_149
+  - first:
+      213: 5899314675573375532
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_150
+  - first:
+      213: -2596475731270338364
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_151
+  - first:
+      213: 1661065538774335647
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_152
+  - first:
+      213: -6701776941075842859
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_153
+  - first:
+      213: 1092964425829431791
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_154
+  - first:
+      213: 347375746495846692
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_155
+  - first:
+      213: -2811894762870248049
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_156
+  - first:
+      213: -1781517047216394608
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_157
+  - first:
+      213: 3160724034790033463
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_158
+  - first:
+      213: -7470492082492521761
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_159
+  - first:
+      213: -3392445386589527142
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_160
+  - first:
+      213: 8220127036679582951
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_161
+  - first:
+      213: -6490312560650647404
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_162
+  - first:
+      213: 6483026650265676164
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_163
+  - first:
+      213: 611525324371467234
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_164
+  - first:
+      213: 2640735127604500820
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_165
+  - first:
+      213: 9143334896701118308
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_166
+  - first:
+      213: 1351594578972231185
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_167
+  - first:
+      213: 7724615744169925620
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_168
+  - first:
+      213: -5172448577834576393
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_169
+  - first:
+      213: 6014960006897595746
+    second: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_170
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: X_Spawn_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 879
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e3b162117882d80800000000000000
+      internalID: -8275215807569772898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Spawn_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 879
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf4061cc06a8c510800000000000000
+      internalID: 1569687043852750794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Spawn_3
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 879
+        width: 30
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a07bb5667ec77da0800000000000000
+      internalID: -5947057775011204952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Spawn_4
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 879
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd94eab391e7f7c30800000000000000
+      internalID: 4359341611158489564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Spawn_5
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 879
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcaab682959e88ad0800000000000000
+      internalID: -2699651407469106485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Spawn_6
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 879
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b420a5f43c99d1b0800000000000000
+      internalID: -5631298107776949067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Spawn_7
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 879
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894751009d4354a20800000000000000
+      internalID: 3045898829599962264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Idle_1
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 879
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f40c9b5e9e4cdda30800000000000000
+      internalID: 4241762932913455183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Idle_2
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 879
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c2db7ee67243630800000000000000
+      internalID: 3905790134124882945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Idle_3
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 879
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0376075a898d2b00800000000000000
+      internalID: 805451135627719435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Shooting_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 830
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9c5f5643c457ff0800000000000000
+      internalID: -39041233830164002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Shooting_2
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 830
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc032163f1915eaf0800000000000000
+      internalID: -367860172718985011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Jumping_1
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 830
+        width: 24
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b61037703d120cc0800000000000000
+      internalID: -3746399846023555399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Jumping_2
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 830
+        width: 15
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb320696e1ff1da0800000000000000
+      internalID: -5971788608208487460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Jumping_3
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 830
+        width: 19
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612164a64e4e19d50800000000000000
+      internalID: 6742421786836996630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Falling_1
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 830
+        width: 23
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a08d66a45c1c2e0800000000000000
+      internalID: -2107186227288995316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Falling_2(Stalling)
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 830
+        width: 27
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07f2fec744b958c0800000000000000
+      internalID: -4009975772689008882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Landing_1
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 830
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1df317c449856510800000000000000
+      internalID: 1541789375935020316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Landing_2
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 830
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa590128cb4a4970800000000000000
+      internalID: 8739881349785672437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_1
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 789
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39d4fa17a2c10600800000000000000
+      internalID: 432841062171859261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 789
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4df3e9ef0b81c7730800000000000000
+      internalID: 3998097717663252436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_3
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 789
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e7c792386da4bb50800000000000000
+      internalID: 6608097216296372197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_4
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 789
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22afda9ac3f252920800000000000000
+      internalID: 2964827867284634146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_5
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 789
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11689474178b18dc0800000000000000
+      internalID: -3638424227271834095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_6
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 789
+        width: 25
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb7a2356cf1c04e0800000000000000
+      internalID: -2014199996682175501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_7
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 789
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a254ce1f724e06a0800000000000000
+      internalID: -6481169699995102556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_8
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 789
+        width: 24
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91da44564b0559610800000000000000
+      internalID: 1627295576087637273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_9
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 788
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3171449806c69ac0800000000000000
+      internalID: -3848671091392155332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_10
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 789
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bc276c237d4c350800000000000000
+      internalID: 6036186013661055811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_11
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 789
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c730233875c2200800000000000000
+      internalID: 156596308042546247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Jumping_Shooting_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 741
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ae86fa69ae59c40800000000000000
+      internalID: 5518574851321293383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Jumping_Shooting_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 741
+        width: 24
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09b7b19c3decdf750800000000000000
+      internalID: 6340451259414969232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Jumping_Shooting_3
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 741
+        width: 27
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d4c065273656ab0800000000000000
+      internalID: -5015493267286110935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Falling_Shooting_1
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 741
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15649fb2e1b602b80800000000000000
+      internalID: -8421613525851879855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Falling_Shooting_2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 741
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab51917f43eb34310800000000000000
+      internalID: 1388162244853437882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Landing_Shooting_1
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 741
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44345de5e24ea490800000000000000
+      internalID: -7733169954851900337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Landing_Shooting_2
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 741
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c93461001ea10e30800000000000000
+      internalID: 4468043689094298051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Dash_1
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 741
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162edd7903e6772b0800000000000000
+      internalID: -5586875657744424351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Dash_2
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 741
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140d8e6594d77b4d0800000000000000
+      internalID: -3118886462986596287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Dash_Shooting_1
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 741
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3571901578c8a050800000000000000
+      internalID: 5812115724236322110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Dash_Shooting_2
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 741
+        width: 49
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64d8ebb4eb76a0e0800000000000000
+      internalID: -2258981940744366993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_Shooting_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 704
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997aa534c48f3f5f0800000000000000
+      internalID: -723962108645300327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_Shooting_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 703
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31d5e2f5f94f2060800000000000000
+      internalID: 6930839672237445435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_Shooting_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 703
+        width: 32
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c695cf4d2a05919e0800000000000000
+      internalID: -1650199128166344340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_Shooting_4
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 703
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d17dcf16ecd98d0800000000000000
+      internalID: -2837885269924438755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_Shooting_5
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 703
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cafdc0fd7701cff80800000000000000
+      internalID: -8071558325125455956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_Shooting_6
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 703
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5341336c8e7643240800000000000000
+      internalID: 4770552154747507765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_Shooting_7
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 703
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 065ff91509e63e270800000000000000
+      internalID: 8278582106160887136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_Shooting_8
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 703
+        width: 33
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 164640924d9c4dc10800000000000000
+      internalID: 2077507241183044705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_Shooting_9
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 703
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f8974329f9de7b80800000000000000
+      internalID: -8395032991310046991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_Shooting_10
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 703
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1caf47acdb8756d50800000000000000
+      internalID: 6729917974715890369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Running_Shooting_11
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 703
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222c8cb3b964cf020800000000000000
+      internalID: 2376852335881667106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_52
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 661
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b524b1833032e2310800000000000000
+      internalID: 1382080632382505563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_53
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 661
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc13551b380b09000800000000000000
+      internalID: 40726476308689357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_54
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 661
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5844fe47521b92280800000000000000
+      internalID: -9067521600300039035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_55
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 661
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda67e789f8ea5a30800000000000000
+      internalID: 4204929360528370395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_56
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 660
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1443c870d498770800000000000000
+      internalID: 8613500457135129028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_57
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 660
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99f21eb2f6da7440800000000000000
+      internalID: 4934492679797143964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_58
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 660
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe845d62871b7bc90800000000000000
+      internalID: -7154054353449039633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_59
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 661
+        width: 37
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ac01242c0ab30a0800000000000000
+      internalID: -6900745247822656890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_60
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 661
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed6ce7deded84b30800000000000000
+      internalID: 4271909295247617505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_61
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 607
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e534a8877db95cc0800000000000000
+      internalID: -3721735295953783322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_62
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 607
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0aee3b95770c8a0800000000000000
+      internalID: -6286893852654657281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_63
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 606
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556188ee4ca99a710800000000000000
+      internalID: 1705064104542606933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_64
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 606
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c22ec7439ffb0610800000000000000
+      internalID: 1588644301608198852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_65
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 609
+        width: 26
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edead8e2877f305d0800000000000000
+      internalID: -3097360023151595810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_66
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 609
+        width: 30
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af44350a780cb7d80800000000000000
+      internalID: -8251790203483372294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_67
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 609
+        width: 30
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9128741777e980530800000000000000
+      internalID: 3821478519662674457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_68
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 535
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6ff24e8525bbba0800000000000000
+      internalID: -6072169130840033593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_69
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 534
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fb96b5333d10480800000000000000
+      internalID: -8934627968195903616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_70
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 534
+        width: 31
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1870157ed63f60c80800000000000000
+      internalID: -8356724405181544575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_71
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 534
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4abe2faacbb576b40800000000000000
+      internalID: 5433412341325818788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_72
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 534
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148fcf680404dd080800000000000000
+      internalID: -9161095421114910655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_73
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 534
+        width: 42
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f315f2255cb40f030800000000000000
+      internalID: 3526401819090571583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_74
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 534
+        width: 63
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685ce829da65e5ed0800000000000000
+      internalID: -2423404245990587002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_75
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 534
+        width: 47
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c33358c410dff7d0800000000000000
+      internalID: -2882356448815008826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_76
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 534
+        width: 45
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0966bcea81c0a280800000000000000
+      internalID: -9034008050084189937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_77
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 534
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b343e063969231800800000000000000
+      internalID: 581854308716131387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_78
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 534
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c22a00bf54d47990800000000000000
+      internalID: -7389047581167705403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_79
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 468
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488a91de3c087bf40800000000000000
+      internalID: 5744201428719216772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_80
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 473
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb665500922815c0800000000000000
+      internalID: -4244604646836507724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_81
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 469
+        width: 30
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb25eb1318e6f970800000000000000
+      internalID: 8788466891630128106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_82
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 467
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71495cbb4f7fbaf40800000000000000
+      internalID: 5740954780508197911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_83
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 468
+        width: 37
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddcee8b0e83809540800000000000000
+      internalID: 5012651031365872861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_84
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 467
+        width: 41
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84bdcdaef2f4d6480800000000000000
+      internalID: -8904373821019202744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_85
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 463
+        width: 51
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6779b40ce45bee30800000000000000
+      internalID: 4533810822546814831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_86
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 460
+        width: 37
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ee8e0bf5ae32f160800000000000000
+      internalID: 7057772448645549799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_87
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 461
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45313cffe1a4d6430800000000000000
+      internalID: 3777757159434163028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_88
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 478
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44849de9f0a2b2b10800000000000000
+      internalID: 1957704709600528452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_89
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 461
+        width: 21
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77034604cc0b57d0800000000000000
+      internalID: -2928733096616196230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_90
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 459
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca4eb4456c926050800000000000000
+      internalID: 5792364029510830792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_91
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 416
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1543f820fe8876a80800000000000000
+      internalID: -8473653613752798127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_92
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 416
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d55143229a1a94f0800000000000000
+      internalID: -821314767082662445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_93
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 416
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83decbc1f8413a4c0800000000000000
+      internalID: -4277552616176816840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_94
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 416
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f501d7d0b60d53e0800000000000000
+      internalID: -2063485697661008400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_95
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 416
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2efa700c88e7500800000000000000
+      internalID: 395904175599248098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_96
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 416
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9305cd9e1c4be5c0800000000000000
+      internalID: -4185167734331079779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_WallSlide_1
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 361
+        width: 25
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477da920580835420800000000000000
+      internalID: 2617577117195097972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_WallSlide_2
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 361
+        width: 27
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd96c409944451370800000000000000
+      internalID: 8292609371616864735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_WallSlide_3(Stalling)
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 361
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b53e556f23b6c4a0800000000000000
+      internalID: -6573369589955152456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_WallSlide_4
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 361
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d4cfc43862c4150800000000000000
+      internalID: 5858099560676347263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_WallSlide_5
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 361
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4ca746e51d4ba60800000000000000
+      internalID: 7689000667171177675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_WallSlide_Shooting_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 361
+        width: 31
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b4ce1fec5a9a760800000000000000
+      internalID: 7469683765211319048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_WallSlide_Shooting_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 360
+        width: 32
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f75a405f1d133f0800000000000000
+      internalID: -922725598359093502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_WallSlide_Shooting_3(Stalling)
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 362
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0cffa21c2f870d00800000000000000
+      internalID: 938876466784893962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_WallSlide_Shooting_4
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 361
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062a5e97f7ede65a0800000000000000
+      internalID: -6526034170925964704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_WallSlide_Shooting_5
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 362
+        width: 33
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731eb6937810ecbe0800000000000000
+      internalID: -1455223949298507465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_107
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 304
+        width: 21
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c476ac652f40f40800000000000000
+      internalID: 5693942283480026223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_108
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 304
+        width: 18
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad26dd94d2458e10800000000000000
+      internalID: 2199237473988914596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_109
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 307
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4679f4ff0af4e4760800000000000000
+      internalID: 7443974786986776420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_110
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 307
+        width: 20
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa93d89e0380caa0800000000000000
+      internalID: -6142765793016571226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_111
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 304
+        width: 18
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4be7a839bae28fa0800000000000000
+      internalID: -5799815288859399346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_112
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 316
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d43563d273727d0800000000000000
+      internalID: -2943323164138844828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_113
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 321
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b2debb2a3a841c0800000000000000
+      internalID: -4519182306733380802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_114
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 305
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3b6379401984ab0800000000000000
+      internalID: -5023605935428946994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_115
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 254
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a44ceeff3d746a90800000000000000
+      internalID: -7321589380384275288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_116
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 254
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ce6592243ad7e0b0800000000000000
+      internalID: -5699346885960700219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_117
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 254
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ecd788e03db6850800000000000000
+      internalID: 6371418157218647631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_118
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 250
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ecb8cec411a5d60800000000000000
+      internalID: 7879629520121876111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_119
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 254
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f69d8519f298c600800000000000000
+      internalID: 488802158075811574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_120
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 250
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b224e3aac9c48ded0800000000000000
+      internalID: -2389075366565232085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_121
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 254
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973e74dd121ee61a0800000000000000
+      internalID: -6814261650602335367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_122
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 250
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d183d97982c36970800000000000000
+      internalID: 8747048796993847760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_123
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 254
+        width: 31
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37406e78ce01902a0800000000000000
+      internalID: -6770861956696505229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_124
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 254
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f57072ecfbd741a0800000000000000
+      internalID: -6825244831079434768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_125
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 254
+        width: 26
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639431d948496b360800000000000000
+      internalID: 7185093552808085814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_126
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 254
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498f503d4007a2ed0800000000000000
+      internalID: -2438013082245138284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Damaged_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 192
+        width: 22
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1992deed8fa4db30800000000000000
+      internalID: 4311263767432435999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Damaged_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 192
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8ea9a1482c499f0800000000000000
+      internalID: -462530989074487073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: X_Damaged_3
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 189
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041dbd6067b73a9e0800000000000000
+      internalID: -1611308494817078976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_130
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 190
+        width: 28
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6dee0bfcf9f8cf80800000000000000
+      internalID: -8085938266004591251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_131
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 190
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22b5da6d63b019a0800000000000000
+      internalID: -6264309799147163089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_132
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 190
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e34b61b6e495750800000000000000
+      internalID: 6294148176076357171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_133
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 190
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97aac4eadf0c6c9e0800000000000000
+      internalID: -1601380421700113799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_134
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 190
+        width: 31
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f41c23d378825eb0800000000000000
+      internalID: -4732570227367471883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_135
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 192
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128fea7ace194dcc0800000000000000
+      internalID: -3687161749298022367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_136
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 192
+        width: 25
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20529a3723828ec70800000000000000
+      internalID: 9000488052453876994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_137
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 193
+        width: 18
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515e19cc2a10b7b30800000000000000
+      internalID: 4286021269101602069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_138
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 184
+        width: 45
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db944b9ac05e05db0800000000000000
+      internalID: -4805088959854786115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_139
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 193
+        width: 33
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14a244f68af698f10800000000000000
+      internalID: 2272470256197052993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_140
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 130
+        width: 20
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d13781bae58f48b0800000000000000
+      internalID: -5165763004523400749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_141
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 134
+        width: 25
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1facf95379d16150800000000000000
+      internalID: 5864207279267295003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_142
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 131
+        width: 15
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c062732ac0c8fb0f0800000000000000
+      internalID: -1099005798166092276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_143
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 133
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bea5c4d97487a330800000000000000
+      internalID: 3722089275840638645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_144
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 136
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc84c8b12b47d2af0800000000000000
+      internalID: -419550881960408881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_145
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 138
+        width: 29
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 869b2ef8e039136b0800000000000000
+      internalID: -5318307994195019416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_146
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 89
+        width: 90
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92cc030c919dbee50800000000000000
+      internalID: 6839799163714063401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_147
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 99
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01183f26bc39d27d0800000000000000
+      internalID: -2941532479855296240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_148
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 94
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf0a21746d2c98e0800000000000000
+      internalID: -1685422251124846628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_149
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 90
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237d58def47f646c0800000000000000
+      internalID: -4159365283170625742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_150
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 86
+        width: 32
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22ccc701739ed150800000000000000
+      internalID: 5899314675573375532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_151
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 89
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c875b1441777fbd0800000000000000
+      internalID: -2596475731270338364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_152
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 89
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90894b8e4a4d0710800000000000000
+      internalID: 1661065538774335647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_153
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 89
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8354f21618ef2a0800000000000000
+      internalID: -6701776941075842859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_154
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 89
+        width: 37
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9b3b1ca5dfa2f00800000000000000
+      internalID: 1092964425829431791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_155
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 47
+        width: 30
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4299875a66022d400800000000000000
+      internalID: 347375746495846692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_156
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 47
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d66597c942af8d0800000000000000
+      internalID: -2811894762870248049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_157
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 47
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e2d573fa7c647e0800000000000000
+      internalID: -1781517047216394608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_158
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 47
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73803be63c52ddb20800000000000000
+      internalID: 3160724034790033463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_159
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 47
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd24aa5080b735890800000000000000
+      internalID: -7470492082492521761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_160
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 47
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a932b6415ec9be0d0800000000000000
+      internalID: -3392445386589527142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_161
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 47
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4fedddcf1c31270800000000000000
+      internalID: 8220127036679582951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_162
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 50
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498892dfc17cde5a0800000000000000
+      internalID: -6490312560650647404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_163
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 50
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 489e97ec36658f950800000000000000
+      internalID: 6483026650265676164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_164
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 50
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb1152ea039c7800800000000000000
+      internalID: 611525324371467234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_165
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 50
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45913ca7b96c5a420800000000000000
+      internalID: 2640735127604500820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_166
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 50
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4679d4425a6a3ee70800000000000000
+      internalID: 9143334896701118308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_167
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 2
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116cbf7cb14d1c210800000000000000
+      internalID: 1351594578972231185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_168
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 2
+        width: 25
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fb53a1b719533b60800000000000000
+      internalID: 7724615744169925620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_169
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 5
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f5123b5c65c738b0800000000000000
+      internalID: -5172448577834576393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-mega-man-x2-mega-man-x6-super-nintendo-entertainme-rpg-sprite-5b203ece72e264.3269990115288398864706_170
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 8
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265ff45f14e697350800000000000000
+      internalID: 6014960006897595746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
