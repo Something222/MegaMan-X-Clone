@@ -129,7 +129,7 @@ public abstract class PlayerState : State
     public IEnumerator flipRoutine()
     {
         flippingRoutineRunning = true;
-        yield return new WaitForSeconds(.3f);
+        yield return new WaitForSeconds(.085f);
         facingRight = !facingRight;
         flippingRoutineRunning=false;
     }
@@ -167,11 +167,31 @@ public abstract class PlayerState : State
         tempscale.x *= -1;
         player.transform.localScale = tempscale;
     }
-   
+    protected virtual void Flip(float DeltaX)
+    {
+        if (DeltaX > 1)
+        {
+            facingRight = true;
+        }
+        else
+            facingRight = false;
+        Vector3 tempscale = player.transform.localScale;
+        tempscale.x *= -1;
+        player.transform.localScale = tempscale;
+    }
+    protected void RightCheck()
+    {
+        if (player.transform.localScale.x > 0)
+            facingRight = true;
+        else
+            facingRight = false;
+    }
     public override void Enter()
     {
+
         RoundInputValueX();
         rigidbody2D = player.GetComponent<Rigidbody2D>();
+        RightCheck();
         base.Enter();
     }
 

@@ -40,10 +40,8 @@ public class PlayerCharacter : LivingEntities
             health -= damage;
 
             if (health > 0)
-            {
                 currState.SwitchToDamagedState();
 
-            }
         }
        // else
             //die();

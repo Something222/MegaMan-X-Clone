@@ -30,9 +30,7 @@ public class GroundedState : PlayerState
     {
         Move();
         if(script!=null&&!script.IsGrounded())
-        {
             SwitchToAirPhase(false);
-        }
 
     }
     
@@ -45,16 +43,14 @@ public class GroundedState : PlayerState
 
             if (Mathf.Abs(deltaX) > 0)
             {
-                 if(MoveCheck())
+                 if (deltaX < 0 && player.transform.localScale.x > 0)
+                    Flip();
+                 else if (deltaX > 0 && player.transform.localScale.x < 0)
+                  Flip();
+
+                 if (MoveCheck())
                      player.transform.position = new Vector3(player.transform.position.x + deltaX, player.transform.position.y);
-
-                anim.SetBool("IsRunning", true);
-
-                if (deltaX < 0 && facingRight)
-                    Flip();
-                else if (deltaX > 0 && !facingRight)
-                    Flip();
-
+                 anim.SetBool("IsRunning", true);
             }
             else
                 anim.SetBool("IsRunning", false);
@@ -87,7 +83,6 @@ public class GroundedState : PlayerState
     public override void OnShoot(InputAction.CallbackContext context)
     {
         base.OnShoot(context);
-
     }
     
 }

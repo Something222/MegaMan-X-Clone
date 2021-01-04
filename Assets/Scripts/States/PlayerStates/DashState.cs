@@ -46,9 +46,7 @@ public class DashState : PlayerState
     {
         Move();
         if (script != null && !script.IsGrounded())
-        {
             SwitchToAirPhase(true);
-        }
     }
     public override void Exit()
     {
@@ -84,9 +82,7 @@ public class DashState : PlayerState
     public override void OnDash(InputAction.CallbackContext context)
     {
         if(context.canceled)
-        {
             SwitchToGroundedState();
-        }
     }
     protected override void Flip()
     {

@@ -17,13 +17,9 @@ public class AirState :PlayerState
     {
         base.Enter();
         if (rigidbody2D.velocity.y>0)
-        {
             anim.SetBool("IsJumping", true);
-        }
         else if(rigidbody2D.velocity.y<=0)
-        {
             anim.SetBool("IsFalling", true);
-        }
       
     }
 
@@ -38,17 +34,15 @@ public class AirState :PlayerState
 
     public override void OnJump(InputAction.CallbackContext context,bool wasdashing)
     {
-        if(context.canceled&& rigidbody2D.velocity.y>0 &&script.cantMove)
+        if (rigidbody2D != null)
         {
-            rigidbody2D.velocity = new Vector2(deltaX, rigidbody2D.velocity.y);
-            script.cantMove = false;
-
-        }
-       else if (context.canceled && rigidbody2D.velocity.y > 0 && !script.cantMove)
-        {
-            rigidbody2D.velocity = new Vector2(deltaX, 0);
-          
-
+            if (context.canceled && rigidbody2D.velocity.y > 0 && script.cantMove)
+            {
+                rigidbody2D.velocity = new Vector2(deltaX, rigidbody2D.velocity.y);
+                script.cantMove = false;
+            }
+            else if (context.canceled && rigidbody2D.velocity.y > 0 && !script.cantMove)
+                rigidbody2D.velocity = new Vector2(deltaX, 0);
         }
     }
 
@@ -62,10 +56,7 @@ public class AirState :PlayerState
         Move();
         CheckIfFalling();
         if(script!=null&&script.IsGrounded() && rigidbody2D.velocity.y <= 0)
-        {
             SwitchToGroundedState();
-        }
-       
     }
 
    
@@ -73,21 +64,18 @@ public class AirState :PlayerState
     {
       
         if(!wasDashing)
-        deltaX = inputValueX * stats.moveSpeed * Time.deltaTime;
+             deltaX = inputValueX * stats.moveSpeed * Time.deltaTime;
         else
             deltaX = inputValueX * stats.moveSpeed *stats.dashSpeed* Time.deltaTime;
         if (Mathf.Abs(deltaX) > 0 && !script.cantMove)
         {
-          
                 player.transform.position = new Vector3(player.transform.position.x + deltaX, player.transform.position.y);
                 if (!MoveCheck())
-                    SwitchToWallSlideState();
-
-                if (deltaX < 0 && facingRight)
+                    SwitchToWallSlideState(); 
+                if (deltaX < 0 &&player.transform.localScale.x>0)
                     Flip();
-                else if (deltaX > 0 && !facingRight)
+                else if (deltaX > 0 && player.transform.localScale.x < 0)
                     Flip();
-            
         }
        
     }
@@ -95,9 +83,7 @@ public class AirState :PlayerState
     private void CheckIfFalling()
     {
         if(rigidbody2D.velocity.y<=0)
-        {
             anim.SetBool("IsFalling", true);
-        }
     }
     public override void OnShoot(InputAction.CallbackContext context)
     {

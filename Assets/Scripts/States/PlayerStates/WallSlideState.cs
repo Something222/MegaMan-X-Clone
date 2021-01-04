@@ -29,9 +29,7 @@ public class WallSlideState : PlayerState
         
         anim.SetBool("IsWallSliding", false);
         if(script.flippingCoroutine!=null)
-        {
             script.StopCoroutine(script.flippingCoroutine);
-        }
         if (flippingRoutineRunning)
             flippingRoutineRunning = false;
         else
@@ -96,13 +94,9 @@ public class WallSlideState : PlayerState
         if (Mathf.Abs(deltaX) > 0)
         {
           if(wallDirection && deltaX<0)
-            {
                 SwitchToAirPhase(dashing);
-            }
-          if(!wallDirection && deltaX>0)
-            {
+          else if(!wallDirection && deltaX>0)
                 SwitchToAirPhase(dashing);
-            }
         }
 
     }
