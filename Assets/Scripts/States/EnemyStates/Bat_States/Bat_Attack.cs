@@ -9,6 +9,7 @@ public class Bat_Attack : Bat_States
 
     public override void Enter()
     {
+        self.collider.size = self.AwakeColliderSize;
         self.moveSpeed = self.attackMoveSpeed;
         self.Anim.SetBool("Attacking", true);
         base.Enter();

@@ -9,7 +9,7 @@ public class PlayerCharacter : LivingEntities
     private float distToGround;
     private BoxCollider2D capsule;
     [SerializeField] private float heightCheck;
-    new PlayerState currstate;
+   [SerializeField] new PlayerState currState;
 
     //Coroutines
     public Coroutine shootingCoroutines;
@@ -26,37 +26,42 @@ public class PlayerCharacter : LivingEntities
 
     public void TakeDamage(int damage)
     {
-        health -= damage;
-
-        if(health>0)
+        if (!invicibility)
         {
-            currstate.SwitchToDamagedState();
-            
+            invicibility = true;
+            StartCoroutine(TurnOffInvicibility());
+            health -= damage;
+
+            if (health > 0)
+            {
+                currState.SwitchToDamagedState();
+
+            }
         }
        // else
             //die();
     }
     public void ExitPhase()
     {
-        currstate.phase = State.Phase.EXIT;
+        currState.phase = State.Phase.EXIT;
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        currstate.OnMove(context);
+        currState.OnMove(context);
     }
     public void OnJump(InputAction.CallbackContext context)
     {
-        currstate.OnJump(context);
+        currState.OnJump(context);
     }
     public void OnShoot(InputAction.CallbackContext context)
     {
         if(context.started)
-        currstate.OnShoot(context);
+        currState.OnShoot(context);
     }
     public void OnDash(InputAction.CallbackContext context)
     {
-            currstate.OnDash(context);
+            currState.OnDash(context);
     }
     public virtual bool IsGrounded()
     {
@@ -89,14 +94,19 @@ public class PlayerCharacter : LivingEntities
         distToGround = capsule.bounds.extents.y;
         
         base.Start();
-        currstate = new GroundedState(gameObject, anim,0,true,this);
+        currState = new GroundedState(gameObject, anim,0,true,this);
         
     }
 
     // Update is called once per frame
     void Update()
     {
-       currstate=(PlayerState)currstate.Process();
+       currState=(PlayerState)currState.Process();
+        
     }
-   
+
+    public override void Respawn()
+    {
+        throw new System.NotImplementedException();
+    }
 }

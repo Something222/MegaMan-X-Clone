@@ -28,7 +28,9 @@ public abstract class PlayerState : State
     public virtual void OnMove(InputAction.CallbackContext context)
     {
         inputValueX = context.ReadValue<Vector2>().x;
+        
         RoundInputValueX();
+        Debug.Log(inputValueX);
     }
     public virtual void OnDash(InputAction.CallbackContext context)
     {
@@ -40,6 +42,7 @@ public abstract class PlayerState : State
             inputValueX = -1;
         else if (inputValueX > 0)
             inputValueX = 1;
+        
     }
 
     public abstract void OnJump(InputAction.CallbackContext context);

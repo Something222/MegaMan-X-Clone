@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8223150991189554930
 Transform:
   m_ObjectHideFlags: 0
@@ -146,15 +146,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  maxHealth: 0
   moveSpeed: 1
   jumpHeight: 5
+  invicibility: 0
   dashSpeed: 2
   anim: {fileID: 0}
+  iFrames: 0.55
   awakeXColliderSize: 1.45
   awakeYColliderSize: 1.375
   asleepXColliderSize: 0.86
   asleepYColliderSize: 1.41
   damage: 10
+  retreatRange: 10
+  attackMoveSpeed: 3.5
+  retreatMoveSpeed: 4.5
+  collider: {fileID: 0}
 --- !u!95 &1933456108
 Animator:
   serializedVersion: 3

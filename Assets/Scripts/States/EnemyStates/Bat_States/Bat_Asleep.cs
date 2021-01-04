@@ -10,6 +10,7 @@ public class Bat_Asleep : Bat_States
 
     public override void Enter()
     {
+        self.collider.size = self.AsleepColliderSize;
         self.anim.SetBool("Attacking", false);
         base.Enter();
     }
@@ -20,7 +21,6 @@ public class Bat_Asleep : Bat_States
       
         if (Vector2.Distance(playerPos, currPos) <= aggroRange)
         {
-          
             SwitchToAttackPhase();
         }
      

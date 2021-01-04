@@ -9,7 +9,7 @@ using UnityEngine;
 public class Bat_Enemy : LivingEntities
 {
     //State
-   [SerializeField] private new Bat_States currState;
+   [SerializeField] private new Bat_States curState;
 
     //Collider Size Differences
     [SerializeField] private float awakeXColliderSize;
@@ -25,8 +25,11 @@ public class Bat_Enemy : LivingEntities
 
     private Vector2 awakeColliderSize;
     private Vector2 asleepColliderSize;
+
+    public Vector2 AwakeColliderSize => awakeColliderSize;
+    public Vector2 AsleepColliderSize => asleepColliderSize;
     //Components
-    private BoxCollider2D collider;
+    public BoxCollider2D collider;
     private Rigidbody2D body;
     
 
@@ -38,7 +41,7 @@ public class Bat_Enemy : LivingEntities
  
     public Animator Anim { get => anim; }
 
-    void Start()
+    protected override void Start()
     {
         base.Start();
         moveSpeed = 3.5f;
@@ -48,21 +51,30 @@ public class Bat_Enemy : LivingEntities
         body = GetComponent<Rigidbody2D>();
         body.constraints = RigidbodyConstraints2D.FreezeAll;
         collider.size = asleepColliderSize;
-        currState = new Bat_Asleep(this);
+        health = 10;
+        maxHealth = health;
+        curState = new Bat_Asleep(this);
+    }
+
+    public override void Respawn()
+    {
+        base.Respawn();
+        curState = new Bat_Asleep(this);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        currState=(Bat_States)currState.Process();
-     
+        curState=(Bat_States)curState.Process();
+       // Debug.Log(curState);
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag=="Player")
         {
-            currState = new Bat_Retreat(this);
+            curState = new Bat_Retreat(this);
             collision.GetComponent<PlayerCharacter>().TakeDamage(damage);
         }
        
@@ -72,7 +84,7 @@ public class Bat_Enemy : LivingEntities
     {
         if(collision.tag=="Spawner")
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 

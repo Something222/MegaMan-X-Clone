@@ -13,6 +13,7 @@ public class BulletBehaviour : MonoBehaviour
             if (isliving != null)
             {
                 DamageDealer.DealDamage(isliving, damage);
+                
             }
             gameObject.SetActive(false);
         }

@@ -2,25 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LivingEntities : MonoBehaviour
+public abstract class LivingEntities : MonoBehaviour
 {
     [SerializeField] public float health=100;
+    public float maxHealth;
     [SerializeField]public float moveSpeed=1f;
-    [SerializeField] public State currstate;
+    [SerializeField] public State currState;
     [SerializeField] public float jumpHeight=5;
+    public bool invicibility = false;
      public float dashSpeed = 2;
     [SerializeField]public Animator anim;
-    
+    [SerializeField] private float iFrames = .55f;
     protected virtual void Start()
     {
         anim = GetComponent<Animator>();
+     
     }
 
     //Make a death Function 
     public virtual void Die()
     {
 
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        this.gameObject.SetActive(false);
         //anim.setTrigger(Die) //this will call the destroy object
         //Switch to deathState
     }
@@ -29,9 +33,15 @@ public class LivingEntities : MonoBehaviour
     {
         this.gameObject.SetActive(false);
     }
-    public virtual void DestroyObject()
+  
+    public IEnumerator TurnOffInvicibility()
     {
-        Destroy(gameObject);
+        yield return new WaitForSeconds(iFrames);
+        invicibility = false;
     }
-
+    public virtual void Respawn()
+    {
+        invicibility = false;
+        health = maxHealth;
+    }
 }

@@ -6,10 +6,15 @@ public static class DamageDealer
 {
     public static void DealDamage(LivingEntities other,float damage)
     {
-        other.health -= damage;
-        if(other.health<=0)
+        if (!other.invicibility)
         {
-            other.Die();
+            other.invicibility = true;
+            other.StartCoroutine(other.TurnOffInvicibility());
+            other.health -= damage;
+            if (other.health <= 0)
+            {
+                other.Die();
+            }
         }
     }
 }
