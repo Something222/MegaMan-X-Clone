@@ -39,30 +39,31 @@ public class GroundedState : PlayerState
     //old input system
     public void Move()
     {
-        deltaX = inputValueX * stats.moveSpeed * Time.deltaTime;
+
        
-        if (Mathf.Abs(deltaX) > 0)
-        {
-            player.transform.position = new Vector3(player.transform.position.x + deltaX, player.transform.position.y);
-         
-            anim.SetBool("IsRunning", true);
+            deltaX = inputValueX * stats.moveSpeed * Time.deltaTime;
 
-            if (deltaX < 0 && facingRight)
-                Flip();
-            else if (deltaX > 0 && !facingRight)
-                Flip();
+            if (Mathf.Abs(deltaX) > 0)
+            {
+                 if(MoveCheck())
+                     player.transform.position = new Vector3(player.transform.position.x + deltaX, player.transform.position.y);
 
-        }
-        else
-            anim.SetBool("IsRunning", false);
+                anim.SetBool("IsRunning", true);
+
+                if (deltaX < 0 && facingRight)
+                    Flip();
+                else if (deltaX > 0 && !facingRight)
+                    Flip();
+
+            }
+            else
+                anim.SetBool("IsRunning", false);
+        
     }
    
 
     //so the new input system is basically event driven
-    public override void OnMove(InputAction.CallbackContext context)
-    {
-        base.OnMove(context);
-    }
+  
     public override void OnDash(InputAction.CallbackContext context)
     {
         if (context.started)
@@ -73,24 +74,15 @@ public class GroundedState : PlayerState
                 SwitchToDashState(false);
         }
     }
-    public override void OnJump(InputAction.CallbackContext context)
+    public override void OnJump(InputAction.CallbackContext context,bool wasDashing)
     {
         //This will cause a state change to the AirState 
         //while also adding force in y to jump
         //we need to pass whether or not we were dashing for the airspeed
-        if (context.started)
-        {
-            player.GetComponent<Rigidbody2D>().velocity=new Vector2(deltaX,stats.jumpHeight);
-            SwitchToAirPhase(false);
-        }
+        base.OnJump(context, false);
 
     }
-    private void SwitchToDashState(bool wasRunning)
-    {
-        //anim.SetBool("IsRunning", false);
-        nextState = new DashState(player, anim, inputValueX, facingRight, script,wasRunning);
-        phase = Phase.EXIT;
-    }
+ 
     
     public override void OnShoot(InputAction.CallbackContext context)
     {

@@ -10,13 +10,20 @@ public class PlayerCharacter : LivingEntities
     private BoxCollider2D capsule;
     [SerializeField] private float heightCheck;
    [SerializeField] new PlayerState currState;
+    Vector3 groundChecker;
+    public bool cantMove;
 
     //Coroutines
     public Coroutine shootingCoroutines;
     public Coroutine StopDashing;
+    public Coroutine flippingCoroutine;
+
+
     public float DistToGround { get => distToGround; }
     public float BulletSpeed { get => bulletSpeed; }
     public float BulletXOffset { get => bulletXOffset; set => bulletXOffset = value; }
+    public BoxCollider2D Capsule { get => capsule;}
+    public LayerMask PlatformLayerMask { get => platformLayerMask; }
 
 
     //BulletStuff
@@ -52,7 +59,7 @@ public class PlayerCharacter : LivingEntities
     }
     public void OnJump(InputAction.CallbackContext context)
     {
-        currState.OnJump(context);
+        currState.OnJump(context,false);
     }
     public void OnShoot(InputAction.CallbackContext context)
     {
@@ -66,7 +73,7 @@ public class PlayerCharacter : LivingEntities
     public virtual bool IsGrounded()
     {
       
-        RaycastHit2D rayCastHit = Physics2D.BoxCast(capsule.bounds.center, capsule.bounds.size,0,Vector2.down,.5f,platformLayerMask);
+        RaycastHit2D rayCastHit = Physics2D.BoxCast(Capsule.bounds.center, Capsule.bounds.size,0,Vector2.down,.5f,PlatformLayerMask);
 
         if (rayCastHit.collider != null)
         {
@@ -87,12 +94,15 @@ public class PlayerCharacter : LivingEntities
         anim.SetBool("IsShooting", false);
         anim.SetFloat("ShootOffset", 0);
     }
+ 
     // Start is called before the first frame update
     protected override void Start()
     {
         capsule = GetComponent<BoxCollider2D>();
-        distToGround = capsule.bounds.extents.y;
-        
+        distToGround = Capsule.bounds.extents.y;
+        groundChecker=new Vector3(Capsule.bounds.center.x-.2f, Capsule.bounds.center.y, Capsule.bounds.center.z);
+
+
         base.Start();
         currState = new GroundedState(gameObject, anim,0,true,this);
         
@@ -102,7 +112,7 @@ public class PlayerCharacter : LivingEntities
     void Update()
     {
        currState=(PlayerState)currState.Process();
-        
+       
     }
 
     public override void Respawn()

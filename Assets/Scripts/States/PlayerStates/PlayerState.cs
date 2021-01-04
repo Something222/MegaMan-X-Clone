@@ -12,6 +12,10 @@ public abstract class PlayerState : State
     protected Animator anim;
     protected PlayerCharacter script;
     protected GameObject player;
+    protected float boxCastBuffer = .29f;
+    protected Rigidbody2D rigidbody2D;
+    
+    protected bool flippingRoutineRunning;
 
     public PlayerState(GameObject player, Animator anim, float inputValueX, bool facingRight, PlayerCharacter script)
     {
@@ -25,12 +29,45 @@ public abstract class PlayerState : State
             stats = player.GetComponent<LivingEntities>();
         
     }
+    public bool MoveCheck()
+    {
+        RaycastHit2D hit;
+        Vector2 direction;
+        if (facingRight)
+            direction = Vector2.right;
+        else
+            direction = Vector2.left;
+        if (script.IsGrounded())
+            hit = Physics2D.Raycast(script.Capsule.bounds.center, direction, 1f,script.PlatformLayerMask);
+        else
+            hit = Physics2D.BoxCast(script.Capsule.bounds.center, script.Capsule.bounds.size, 0, direction, boxCastBuffer, script.PlatformLayerMask);
+
+        if(hit.collider!=null)
+            return false;
+
+        return true;
+    }
+
+    protected bool SlideCheck(bool wallDirection)
+    {
+        RaycastHit2D hit;
+        Vector2 direction;
+        if (wallDirection)
+            direction = Vector2.right;
+        else
+            direction = Vector2.left;
+        hit = Physics2D.BoxCast(script.Capsule.bounds.center, script.Capsule.bounds.size, 0, direction, boxCastBuffer, script.PlatformLayerMask);
+
+        if (hit.collider != null)
+            return false;
+        return true;
+    }
     public virtual void OnMove(InputAction.CallbackContext context)
     {
         inputValueX = context.ReadValue<Vector2>().x;
         
         RoundInputValueX();
-        Debug.Log(inputValueX);
+        
     }
     public virtual void OnDash(InputAction.CallbackContext context)
     {
@@ -45,7 +82,14 @@ public abstract class PlayerState : State
         
     }
 
-    public abstract void OnJump(InputAction.CallbackContext context);
+    public virtual void OnJump(InputAction.CallbackContext context,bool wasDashing)
+    {
+        if (context.started)
+        {
+            player.GetComponent<Rigidbody2D>().velocity = new Vector2(deltaX, stats.jumpHeight);
+            SwitchToAirPhase(wasDashing);
+        }
+    }
     public virtual void OnShoot(InputAction.CallbackContext context)
     {
         anim.SetBool("IsShooting", true);
@@ -73,14 +117,49 @@ public abstract class PlayerState : State
 
     public void SwitchToDamagedState()
     {
-        nextState = new DamagedState(player, anim, inputValueX, facingRight, script, player.GetComponent<Rigidbody2D>());
+        nextState = new DamagedState(player, anim, inputValueX, facingRight, script);
         phase = Phase.EXIT;
     }
+    protected void SwitchToDashState(bool wasRunning)
+    {
+        //anim.SetBool("IsRunning", false);
+        nextState = new DashState(player, anim, inputValueX, facingRight, script, wasRunning);
+        phase = Phase.EXIT;
+    }
+    public IEnumerator flipRoutine()
+    {
+        flippingRoutineRunning = true;
+        yield return new WaitForSeconds(.3f);
+        facingRight = !facingRight;
+        flippingRoutineRunning=false;
+    }
+    public IEnumerator ResetAirMomentum()
+    {
+        script.cantMove =true;
+        yield return new WaitForSeconds(.35f);
+        script.cantMove = false;
+        rigidbody2D.velocity = new Vector2(deltaX, rigidbody2D.velocity.y);
+    }
+
     protected void SwitchToAirPhase(bool dash)
     {
-        nextState = new AirState(player, anim, inputValueX, dash, facingRight, script, player.GetComponent<Rigidbody2D>());
+        nextState = new AirState(player, anim, inputValueX, dash, facingRight, script);
         phase = Phase.EXIT;
     }
+    protected void SwitchToWallSlideState()
+    {
+        nextState = new WallSlideState(player, anim, inputValueX, facingRight, script);
+        phase = Phase.EXIT;
+
+    }
+    protected void SwitchToGroundedState()
+    {
+       
+            nextState = new GroundedState(player, anim, deltaX, facingRight, script);
+            this.phase = Phase.EXIT;
+       
+    }
+    
     protected virtual void Flip()
     {
         facingRight = !facingRight;
@@ -92,6 +171,7 @@ public abstract class PlayerState : State
     public override void Enter()
     {
         RoundInputValueX();
+        rigidbody2D = player.GetComponent<Rigidbody2D>();
         base.Enter();
     }
 

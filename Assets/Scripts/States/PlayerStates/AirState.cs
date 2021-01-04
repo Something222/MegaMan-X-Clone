@@ -7,16 +7,16 @@ using UnityEngine.InputSystem;
 public class AirState :PlayerState
 {
     private bool wasDashing;
-    private Rigidbody2D rigidbody2D;
-    public AirState(GameObject player, Animator anim,float inputValueX, bool wasDashing,bool facingRight,PlayerCharacter script,Rigidbody2D rigidbody2D)
+   
+    public AirState(GameObject player, Animator anim,float inputValueX, bool wasDashing,bool facingRight,PlayerCharacter script)
         : base(player, anim, inputValueX,facingRight,script)
     {
-        this.rigidbody2D = rigidbody2D;
         this.wasDashing = wasDashing;
     }
     public override void Enter()
     {
-        if(rigidbody2D.velocity.y>0)
+        base.Enter();
+        if (rigidbody2D.velocity.y>0)
         {
             anim.SetBool("IsJumping", true);
         }
@@ -24,7 +24,7 @@ public class AirState :PlayerState
         {
             anim.SetBool("IsFalling", true);
         }
-        base.Enter();
+      
     }
 
     public override void Exit()
@@ -36,11 +36,19 @@ public class AirState :PlayerState
         base.Exit();
     }
 
-    public override void OnJump(InputAction.CallbackContext context)
+    public override void OnJump(InputAction.CallbackContext context,bool wasdashing)
     {
-        if(context.canceled&& player.GetComponent<Rigidbody2D>().velocity.y>0)
+        if(context.canceled&& rigidbody2D.velocity.y>0 &&script.cantMove)
+        {
+            rigidbody2D.velocity = new Vector2(deltaX, rigidbody2D.velocity.y);
+            script.cantMove = false;
+
+        }
+       else if (context.canceled && rigidbody2D.velocity.y > 0 && !script.cantMove)
         {
             rigidbody2D.velocity = new Vector2(deltaX, 0);
+          
+
         }
     }
 
@@ -53,7 +61,7 @@ public class AirState :PlayerState
     {
         Move();
         CheckIfFalling();
-        if(script!=null&&script.IsGrounded())
+        if(script!=null&&script.IsGrounded() && rigidbody2D.velocity.y <= 0)
         {
             SwitchToGroundedState();
         }
@@ -63,29 +71,27 @@ public class AirState :PlayerState
    
     public void Move()
     {
+      
         if(!wasDashing)
         deltaX = inputValueX * stats.moveSpeed * Time.deltaTime;
         else
             deltaX = inputValueX * stats.moveSpeed *stats.dashSpeed* Time.deltaTime;
-        if (Mathf.Abs(deltaX) > 0)
+        if (Mathf.Abs(deltaX) > 0 && !script.cantMove)
         {
-            player.transform.position = new Vector3(player.transform.position.x + deltaX, player.transform.position.y);
-            if (deltaX < 0 && facingRight)
-                Flip();
-            else if (deltaX > 0 && !facingRight)
-                Flip();
+          
+                player.transform.position = new Vector3(player.transform.position.x + deltaX, player.transform.position.y);
+                if (!MoveCheck())
+                    SwitchToWallSlideState();
+
+                if (deltaX < 0 && facingRight)
+                    Flip();
+                else if (deltaX > 0 && !facingRight)
+                    Flip();
+            
         }
        
     }
-    private void SwitchToGroundedState()
-    {
-        if (rigidbody2D.velocity.y <= 0)
-        {
-            
-            nextState = new GroundedState(player, anim, deltaX, facingRight, script);
-            this.phase = Phase.EXIT;
-        }
-    }
+ 
     private void CheckIfFalling()
     {
         if(rigidbody2D.velocity.y<=0)

@@ -61,13 +61,9 @@ public class DashState : PlayerState
         base.Exit();
        
     }
-    public override void OnJump(InputAction.CallbackContext context)
+    public override void OnJump(InputAction.CallbackContext context,bool wasDashing)
     {
-        if (context.started)
-        {
-            player.GetComponent<Rigidbody2D>().velocity = new Vector2(deltaX, stats.jumpHeight);
-            SwitchToAirPhase(true);
-        }
+        base.OnJump(context,true);
     }
     public override void OnMove(InputAction.CallbackContext context)
     {
@@ -103,6 +99,7 @@ public class DashState : PlayerState
         deltaX = inputValueX * stats.moveSpeed*stats.dashSpeed * Time.deltaTime;
         if (Mathf.Abs(deltaX) > 0)
         {
+            if(MoveCheck())
             player.transform.position = new Vector3(player.transform.position.x + deltaX, player.transform.position.y);
             if (deltaX < 0 && facingRight)
                 Flip();

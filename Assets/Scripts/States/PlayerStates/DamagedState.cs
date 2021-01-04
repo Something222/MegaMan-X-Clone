@@ -6,12 +6,11 @@ using UnityEngine.InputSystem;
 public class DamagedState : PlayerState
 {
 
-    private Rigidbody2D rigidbody2D;
+    
     private float recoilSpeed=3f;
-    public DamagedState(GameObject player, Animator anim, float inputValueX, bool facingRight, PlayerCharacter script,Rigidbody2D rigidbody)
+    public DamagedState(GameObject player, Animator anim, float inputValueX, bool facingRight, PlayerCharacter script)
     : base(player, anim, inputValueX, facingRight, script)
     {
-        rigidbody2D = rigidbody;
     }
    
 
@@ -31,7 +30,7 @@ public class DamagedState : PlayerState
         }
         else
         {
-            nextState = new AirState(player, anim, inputValueX, false, facingRight, script, player.GetComponent<Rigidbody2D>());
+            nextState = new AirState(player, anim, inputValueX, false, facingRight, script);
         }
        
 
@@ -46,7 +45,12 @@ public class DamagedState : PlayerState
 
     public override void Update()
     {
+        Recoil();
 
+    }
+
+    private void Recoil()
+    {
         if (facingRight)
         {
             rigidbody2D.velocity = new Vector2(-recoilSpeed, 0);
@@ -55,12 +59,11 @@ public class DamagedState : PlayerState
         {
             rigidbody2D.velocity = new Vector2(recoilSpeed, 0);
         }
-
     }
 
 
     //Override them make em blank
-    public override void OnJump(InputAction.CallbackContext context)
+    public override void OnJump(InputAction.CallbackContext context,bool wasdashing)
     {
 
     }
