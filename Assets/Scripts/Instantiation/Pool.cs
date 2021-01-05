@@ -16,8 +16,36 @@ public class Pool : MonoBehaviour
     public static Pool instance = null;
     [SerializeField] List<PoolItem> items;
     [SerializeField] List<GameObject> pooledItems;
+    private GameObject prefab;
+    private Queue<GameObject> objects = new Queue<GameObject>();
 
-    public GameObject Get(string tag)
+    public Queue<GameObject> Objects { get => objects; }
+
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+    }
+    void Start()
+    {
+        pooledItems = new List<GameObject>();
+
+        foreach (PoolItem item in items)
+        {
+            for (int i = 0; i < item.amount; i++)
+            {
+                GameObject obj = Instantiate(item.prefab);
+                obj.SetActive(false);
+                pooledItems.Add(obj);
+            }
+        }
+    }
+
+
+    //Udemy Way
+    public GameObject GetUsingList(string tag)
     {
         for(int i=0;i<pooledItems.Count;i++)
         {
@@ -29,33 +57,45 @@ public class Pool : MonoBehaviour
         }
         return null;
     }
-
-    private void Awake()
+    public GameObject GetUsingList()
     {
-        if (instance == null)
-            instance = this;
-        else
-            Destroy(gameObject);
-    }
-
-    void Start()
-    {
-        pooledItems = new List<GameObject>();
-
-        foreach(PoolItem item in items)
+        for(int i = 0; i < pooledItems.Count; i++)
         {
-            for(int i=0;i<item.amount;i++)
+            if(pooledItems[i].activeInHierarchy==false)
             {
-                GameObject obj = Instantiate(item.prefab);
-                obj.SetActive(false);
-                pooledItems.Add(obj);
+                return pooledItems[i];
             }
+
         }
+        return null;
     }
 
-    // Update is called once per frame
-    void Update()
+
+//Jason Way Seems better no looking for string but not limited count also not going through a list everytime
+
+    //public GameObject 
+
+
+    //{
+    //    if (objects.Count == 0)
+
+    //        return objects.Dequeue();
+    //}
+
+    public void ReturnToPool(GameObject objectToReturn)
     {
-        
+        objectToReturn.SetActive(false);
+        Objects.Enqueue(objectToReturn);
     }
+    private void AddObjects(int count)
+    {
+        var newObject = GameObject.Instantiate(prefab);
+        newObject.SetActive(false);
+        Objects.Enqueue(newObject);
+
+        newObject.GetComponent<IGameObjectPooled>().GameObjectPool = this;
+
+    }
+
+
 }

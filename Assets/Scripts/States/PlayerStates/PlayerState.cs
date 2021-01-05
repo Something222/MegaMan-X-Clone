@@ -92,27 +92,31 @@ public abstract class PlayerState : State
     }
     public virtual void OnShoot(InputAction.CallbackContext context)
     {
+        if (ShotPool.Instance.Objects.Count != 0)
+        {
         anim.SetBool("IsShooting", true);
         anim.SetFloat("ShootOffset", 1);
         script.StartResetShooting();
-        GameObject obj = Pool.instance.Get("Bullet");
-        if (obj != null)
-        {
-            Vector3 newpos = player.transform.position;
-            obj.SetActive(true);
-            if (facingRight)
+        // GameObject obj = Pool.instance.GetUsingList("Bullet");
+        
+            GameObject obj = ShotPool.Instance.Get().gameObject;
+            if (obj != null)
             {
-                obj.transform.position = new Vector3(newpos.x + script.BulletXOffset, newpos.y, newpos.z);
-                obj.GetComponent<Rigidbody2D>().velocity = new Vector3(script.BulletSpeed, 0, 0);
-            }
-            else
-            {
-                obj.transform.position = new Vector3(newpos.x - script.BulletXOffset, newpos.y, newpos.z);
-                obj.GetComponent<Rigidbody2D>().velocity = new Vector3(-script.BulletSpeed, 0, 0);
-            }
+                Vector3 newpos = player.transform.position;
+                obj.SetActive(true);
+                if (facingRight)
+                {
+                    obj.transform.position = new Vector3(newpos.x + script.BulletXOffset, newpos.y, newpos.z);
+                    obj.GetComponent<Rigidbody2D>().velocity = new Vector3(script.BulletSpeed, 0, 0);
+                }
+                else
+                {
+                    obj.transform.position = new Vector3(newpos.x - script.BulletXOffset, newpos.y, newpos.z);
+                    obj.GetComponent<Rigidbody2D>().velocity = new Vector3(-script.BulletSpeed, 0, 0);
+                }
 
+            }
         }
-
     }
 
     public void SwitchToDamagedState()

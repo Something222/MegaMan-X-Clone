@@ -117,4 +117,7 @@ public class PlayerCharacter : LivingEntities
     {
         throw new System.NotImplementedException();
     }
+
+
+
 }
