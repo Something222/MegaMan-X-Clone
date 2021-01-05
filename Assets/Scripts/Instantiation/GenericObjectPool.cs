@@ -26,9 +26,7 @@ public abstract class GenericObjectPool<T> : MonoBehaviour where T : Component
      for (int i=0;i<amount;i++)
         {
             var newObject = GameObject.Instantiate(prefab);
-           
-            newObject.gameObject.SetActive(false);
-           
+            newObject.gameObject.SetActive(false);   
         }
     }
     public T GetAndAdd()
@@ -40,7 +38,6 @@ public abstract class GenericObjectPool<T> : MonoBehaviour where T : Component
     }
     public T Get()
     {
-   
         if (Objects.Count == 0)
             return null;
         return Objects.Pop();
@@ -54,7 +51,7 @@ public abstract class GenericObjectPool<T> : MonoBehaviour where T : Component
     {
         var newObject = GameObject.Instantiate(prefab);
         newObject.gameObject.SetActive(false);
-        Objects.Push(newObject);
+       // Objects.Push(newObject);
     }
 
 }
