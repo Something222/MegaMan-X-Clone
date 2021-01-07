@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7926451666400118600}
   - component: {fileID: 6464631124623087739}
   - component: {fileID: 8399752072804511758}
-  - component: {fileID: 3011668349098240619}
+  - component: {fileID: -4202673639227637353}
   m_Layer: 9
-  m_Name: BasicBullet
+  m_Name: BasicBulletGenericPool
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -122,7 +122,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 6
---- !u!114 &3011668349098240619
+--- !u!114 &-4202673639227637353
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,7 +131,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7926451666400118603}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ab658ea3bd6a0848873b997a2aca2ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 552fc13ca055733439d9b22abf4e3119, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 1
+  startingDamage: 1

@@ -40,6 +40,10 @@ public class Bat_Enemy : LivingEntities
 
  
     public Animator Anim { get => anim; }
+    private void Awake()
+    {
+        MaxHealth = health;
+    }
 
     protected override void Start()
     {
@@ -51,8 +55,6 @@ public class Bat_Enemy : LivingEntities
         body = GetComponent<Rigidbody2D>();
         body.constraints = RigidbodyConstraints2D.FreezeAll;
         collider.size = asleepColliderSize;
-        
-       
         curState = new Bat_Asleep(this);
     }
 

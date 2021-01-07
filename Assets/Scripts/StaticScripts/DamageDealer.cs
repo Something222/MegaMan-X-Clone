@@ -17,4 +17,21 @@ public static class DamageDealer
             }
         }
     }
+
+    public static float DealDamageBullet(LivingEntities other, float damage)
+    {
+        float returningDamage=0;
+        if (!other.invicibility)
+        {
+            other.invicibility = true;
+            other.StartCoroutine(other.TurnOffInvicibility());
+            returningDamage = damage - other.health;
+            other.health -= damage;
+            if (other.health <= 0)
+            {
+                other.Die();
+            }
+        }
+        return returningDamage;
+    }
 }

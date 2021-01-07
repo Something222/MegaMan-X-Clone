@@ -5,7 +5,12 @@ using UnityEngine;
 public class BasicPlayerBulletBehaviour : MonoBehaviour
 {
     [SerializeField] private float damage;
+    [SerializeField]private float startingDamage;
     // Start is called before the first frame update
+    private void Start()
+    {
+        damage = startingDamage;
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag != "Spawner")
@@ -13,10 +18,13 @@ public class BasicPlayerBulletBehaviour : MonoBehaviour
             var isliving = other.GetComponent<LivingEntities>();
             if (isliving != null)
             {
-                DamageDealer.DealDamage(isliving, damage);
-
+                damage = DamageDealer.DealDamageBullet(isliving, damage);
+                if (damage <= 0)
+                    gameObject.SetActive(false);
             }
-            gameObject.SetActive(false);
+            else
+                gameObject.SetActive(false);
+            
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -25,5 +33,10 @@ public class BasicPlayerBulletBehaviour : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+    }
+
+    protected virtual void OnEnable()
+    {
+        damage = startingDamage;
     }
 }

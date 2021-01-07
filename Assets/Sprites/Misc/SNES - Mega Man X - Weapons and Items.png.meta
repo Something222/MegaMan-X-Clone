@@ -1567,49 +1567,49 @@ TextureImporter:
     second: SNES - Mega Man X - Weapons and Items_520
   - first:
       213: 6069212665887626265
-    second: SNES - Mega Man X - Weapons and Items_521
+    second: Lvl_1_Shot_Start_1
   - first:
       213: 6818632564481159636
-    second: SNES - Mega Man X - Weapons and Items_522
+    second: Lvl_1_Shot_Start_2
   - first:
       213: 3679033238804993397
-    second: SNES - Mega Man X - Weapons and Items_523
+    second: Lvl_1_Shot_Fired_1
   - first:
       213: 9204066135757363364
-    second: SNES - Mega Man X - Weapons and Items_524
+    second: Lvl_1_Shot_Fired_2
   - first:
       213: 3353649754420248051
-    second: SNES - Mega Man X - Weapons and Items_525
+    second: Lvl_1_Shot_Fired_3
   - first:
       213: -436710614548387563
-    second: SNES - Mega Man X - Weapons and Items_526
+    second: Lvl_1_Shot_Fired_4
   - first:
       213: -2668261028495557478
-    second: SNES - Mega Man X - Weapons and Items_527
+    second: Lvl_1_Shot_Fired_5
   - first:
       213: 1773027699130896652
-    second: SNES - Mega Man X - Weapons and Items_528
+    second: Lvl_1_Shot_Fired_6
   - first:
       213: -6532419187632039325
-    second: SNES - Mega Man X - Weapons and Items_529
+    second: Lvl_1_Shot_End_1
   - first:
       213: -2013216469072373516
-    second: SNES - Mega Man X - Weapons and Items_530
+    second: Lvl_1_Shot_End_2
   - first:
       213: 541983245025873513
-    second: SNES - Mega Man X - Weapons and Items_531
+    second: Lvl_1_Shot_End_3
   - first:
       213: 4351403124272297508
-    second: SNES - Mega Man X - Weapons and Items_532
+    second: Lvl_1_Shot_End_4
   - first:
       213: -8196737667477609397
-    second: SNES - Mega Man X - Weapons and Items_533
+    second: Lvl_1_Shot_End_5
   - first:
       213: -4596511491398218505
-    second: SNES - Mega Man X - Weapons and Items_534
+    second: Lvl_1_Shot_End_6
   - first:
       213: 620269628582314349
-    second: SNES - Mega Man X - Weapons and Items_535
+    second: Lvl_1_Shot_End_7
   - first:
       213: 1684310164996092467
     second: SNES - Mega Man X - Weapons and Items_536
@@ -5486,6 +5486,9 @@ TextureImporter:
   - first:
       213: 1895194972266013414
     second: SNES - Mega Man X - Weapons and Items_1827
+  - first:
+      213: 7242809357298471963
+    second: Lvl_1_Shot_End_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -16526,12 +16529,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_521
+      name: Lvl_1_Shot_Start_1
       rect:
         serializedVersion: 2
-        x: 121
+        x: 137
         y: 1456
-        width: 33
+        width: 17
         height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -16547,7 +16550,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_522
+      name: Lvl_1_Shot_Start_2
       rect:
         serializedVersion: 2
         x: 158
@@ -16568,7 +16571,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_523
+      name: Lvl_1_Shot_Fired_1
       rect:
         serializedVersion: 2
         x: 187
@@ -16589,7 +16592,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_524
+      name: Lvl_1_Shot_Fired_2
       rect:
         serializedVersion: 2
         x: 221
@@ -16610,7 +16613,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_525
+      name: Lvl_1_Shot_Fired_3
       rect:
         serializedVersion: 2
         x: 260
@@ -16631,7 +16634,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_526
+      name: Lvl_1_Shot_Fired_4
       rect:
         serializedVersion: 2
         x: 303
@@ -16652,7 +16655,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_527
+      name: Lvl_1_Shot_Fired_5
       rect:
         serializedVersion: 2
         x: 344
@@ -16673,7 +16676,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_528
+      name: Lvl_1_Shot_Fired_6
       rect:
         serializedVersion: 2
         x: 388
@@ -16694,7 +16697,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_529
+      name: Lvl_1_Shot_End_1
       rect:
         serializedVersion: 2
         x: 434
@@ -16715,7 +16718,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_530
+      name: Lvl_1_Shot_End_2
       rect:
         serializedVersion: 2
         x: 454
@@ -16736,7 +16739,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_531
+      name: Lvl_1_Shot_End_3
       rect:
         serializedVersion: 2
         x: 487
@@ -16757,7 +16760,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_532
+      name: Lvl_1_Shot_End_4
       rect:
         serializedVersion: 2
         x: 507
@@ -16778,7 +16781,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_533
+      name: Lvl_1_Shot_End_5
       rect:
         serializedVersion: 2
         x: 535
@@ -16799,7 +16802,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_534
+      name: Lvl_1_Shot_End_6
       rect:
         serializedVersion: 2
         x: 555
@@ -16820,12 +16823,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_535
+      name: Lvl_1_Shot_End_7
       rect:
         serializedVersion: 2
         x: 581
         y: 1451
-        width: 52
+        width: 24
         height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -43968,6 +43971,27 @@ TextureImporter:
       bones: []
       spriteID: 6e2a50e39c51d4a10800000000000000
       internalID: 1895194972266013414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lvl_1_Shot_End_8
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1450
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1496a58cb0a38460800000000000000
+      internalID: 7242809357298471963
       vertices: []
       indices: 
       edges: []

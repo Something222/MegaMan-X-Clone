@@ -184,7 +184,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Sprite: {fileID: 3918598708214819709, guid: cd16e9996f9819249b36ed6bc8321365, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2996,6 +2996,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 85910083}
     m_Modifications:
+    - target: {fileID: 4567757287632057488, guid: dffe3a422749d5c41a9f2d6c964852d1, type: 3}
+      propertyPath: health
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5876724531753904239, guid: dffe3a422749d5c41a9f2d6c964852d1, type: 3}
       propertyPath: m_Name
       value: Bat_Enemy

@@ -20,7 +20,7 @@ public class PlayerCharacter : LivingEntities
     public Coroutine shootingCoroutines;
     public Coroutine StopDashing;
     public Coroutine flippingCoroutine;
-
+    public Coroutine chargeShotCoroutine;
 
     public float DistToGround { get => distToGround; }
     public float BulletSpeed { get => bulletSpeed; }
@@ -28,13 +28,15 @@ public class PlayerCharacter : LivingEntities
   //  public BoxCollider2D Capsule { get => capsule;}
     public LayerMask PlatformLayerMask { get => platformLayerMask; }
     public CapsuleCollider2D Capsule { get => capsule;}
+    public float JumpingBulletYOffset { get => jumpingBulletYOffset; }
 
 
     //BulletStuff
     [SerializeField]private float bulletSpeed=10f;
     [SerializeField] private float bulletXOffset = 1f;
-    
-
+    [SerializeField] private float jumpingBulletYOffset;
+    public int chargeLevel;
+    [SerializeField] private float chargeTime = 1f;
 
     public void TakeDamage(int damage)
     {
@@ -66,8 +68,18 @@ public class PlayerCharacter : LivingEntities
     }
     public void OnShoot(InputAction.CallbackContext context)
     {
-        if(context.started)
-        currState.OnShoot(context);
+        if (context.started)
+        {
+            chargeLevel = 0;
+            chargeShotCoroutine = StartCoroutine(ChargeShot());
+        }
+        if (context.canceled)
+        {
+            currState.OnShoot(context);
+            if (chargeShotCoroutine != null)
+                StopCoroutine(chargeShotCoroutine);
+            chargeLevel = 0;
+        }
     }
     public void OnDash(InputAction.CallbackContext context)
     {
@@ -76,7 +88,7 @@ public class PlayerCharacter : LivingEntities
     public virtual bool IsGrounded()
     {
       
-        RaycastHit2D rayCastHit = Physics2D.BoxCast(Capsule.bounds.center, Capsule.bounds.size,0,Vector2.down,.1f,PlatformLayerMask);
+        RaycastHit2D rayCastHit = Physics2D.BoxCast(Capsule.bounds.center, Capsule.bounds.size,0,Vector2.down,.25f,PlatformLayerMask);
 
         if (rayCastHit.collider != null)
         {
@@ -97,6 +109,17 @@ public class PlayerCharacter : LivingEntities
         anim.SetBool("IsShooting", false);
         anim.SetFloat("ShootOffset", 0);
     }
+
+    public IEnumerator ChargeShot()
+    {
+        while(true)
+        {
+            Debug.Log(chargeLevel);
+            yield return new WaitForSeconds(chargeTime);
+            if (chargeLevel < 2)
+                chargeLevel++;
+        }
+    }
  
     // Start is called before the first frame update
     protected override void Start()
@@ -106,7 +129,7 @@ public class PlayerCharacter : LivingEntities
         distToGround = Capsule.bounds.extents.y;
         groundChecker=new Vector3(Capsule.bounds.center.x-.2f, Capsule.bounds.center.y, Capsule.bounds.center.z);
         base.Start();
-
+        chargeLevel = 0;
         currState = new GroundedState(gameObject, anim,0,true,this);
       
 
