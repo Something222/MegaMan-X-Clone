@@ -5,26 +5,16 @@ using UnityEngine.InputSystem;
 
 public abstract class State
 {
-
-   
     public Phase phase;
     protected State nextState;
-   
-
-    //Might wanna switch where this script is at
-   
     public enum Phase
     {
         ENTER, UPDATE, EXIT
     };
-
-
-  
-
     public virtual void Enter()
     {
-       
-        phase = Phase.UPDATE; }
+        phase = Phase.UPDATE;
+    }
     public virtual void Update() { phase = Phase.UPDATE; }
     public virtual void Exit() { phase = Phase.EXIT; }
     public virtual State Process()
@@ -38,6 +28,4 @@ public abstract class State
         }
         return this;
     }
-
-  
 }

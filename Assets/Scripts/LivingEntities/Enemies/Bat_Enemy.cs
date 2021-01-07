@@ -51,8 +51,8 @@ public class Bat_Enemy : LivingEntities
         body = GetComponent<Rigidbody2D>();
         body.constraints = RigidbodyConstraints2D.FreezeAll;
         collider.size = asleepColliderSize;
-        health = 10;
-        maxHealth = health;
+        
+       
         curState = new Bat_Asleep(this);
     }
 

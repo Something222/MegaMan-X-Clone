@@ -14,20 +14,17 @@ public abstract class PlayerState : State
     protected GameObject player;
     protected float boxCastBuffer = .29f;
     protected Rigidbody2D rigidbody2D;
-    
     protected bool flippingRoutineRunning;
 
     public PlayerState(GameObject player, Animator anim, float inputValueX, bool facingRight, PlayerCharacter script)
     {
-       
             this.inputValueX = inputValueX;
             this.player = player;
             this.anim = anim;
             this.phase = Phase.ENTER;
             this.facingRight = facingRight;
             this.script = script;
-            stats = player.GetComponent<LivingEntities>();
-        
+            stats = player.GetComponent<LivingEntities>();  
     }
     public bool MoveCheck()
     {
@@ -65,9 +62,7 @@ public abstract class PlayerState : State
     public virtual void OnMove(InputAction.CallbackContext context)
     {
         inputValueX = context.ReadValue<Vector2>().x;
-        
-        RoundInputValueX();
-        
+        RoundInputValueX(); 
     }
     public virtual void OnDash(InputAction.CallbackContext context)
     {
@@ -145,6 +140,13 @@ public abstract class PlayerState : State
         rigidbody2D.velocity = new Vector2(deltaX, rigidbody2D.velocity.y);
     }
 
+    public IEnumerator AirToSlideBuffer()
+    {
+        script.cantTransition = true;
+        yield return new WaitForSeconds(.1f);
+        script.cantTransition = false;
+    }
+
     protected void SwitchToAirPhase(bool dash)
     {
         nextState = new AirState(player, anim, inputValueX, dash, facingRight, script);
@@ -192,7 +194,6 @@ public abstract class PlayerState : State
     }
     public override void Enter()
     {
-
         RoundInputValueX();
         rigidbody2D = player.GetComponent<Rigidbody2D>();
         RightCheck();

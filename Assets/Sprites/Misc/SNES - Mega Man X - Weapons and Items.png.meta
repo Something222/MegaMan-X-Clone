@@ -22,7 +22,7 @@ TextureImporter:
     second: SNES - Mega Man X - Weapons and Items_5
   - first:
       213: -2304276205507180519
-    second: SNES - Mega Man X - Weapons and Items_6
+    second: X_HealthBar_Topper
   - first:
       213: 7856029325147874662
     second: SNES - Mega Man X - Weapons and Items_7
@@ -133,7 +133,7 @@ TextureImporter:
     second: SNES - Mega Man X - Weapons and Items_42
   - first:
       213: 3359605424471550250
-    second: SNES - Mega Man X - Weapons and Items_43
+    second: X_HealthBar_Empty
   - first:
       213: -6021592209301537561
     second: SNES - Mega Man X - Weapons and Items_44
@@ -262,7 +262,7 @@ TextureImporter:
     second: SNES - Mega Man X - Weapons and Items_85
   - first:
       213: -1936422637113803308
-    second: SNES - Mega Man X - Weapons and Items_86
+    second: X_healthTicks
   - first:
       213: -4977901020683137525
     second: SNES - Mega Man X - Weapons and Items_87
@@ -373,7 +373,7 @@ TextureImporter:
     second: SNES - Mega Man X - Weapons and Items_122
   - first:
       213: 1365724127561171342
-    second: SNES - Mega Man X - Weapons and Items_123
+    second: X_HealthIcon
   - first:
       213: -1103527201142314379
     second: SNES - Mega Man X - Weapons and Items_124
@@ -481,7 +481,7 @@ TextureImporter:
     second: SNES - Mega Man X - Weapons and Items_158
   - first:
       213: 4518106412906570903
-    second: SNES - Mega Man X - Weapons and Items_159
+    second: X_Lemon_Icon
   - first:
       213: -1229218267929076944
     second: SNES - Mega Man X - Weapons and Items_160
@@ -889,25 +889,25 @@ TextureImporter:
     second: SNES - Mega Man X - Weapons and Items_294
   - first:
       213: 1057595795326750046
-    second: SNES - Mega Man X - Weapons and Items_295
+    second: X_Small_Health_1
   - first:
       213: -7535053839641134268
-    second: SNES - Mega Man X - Weapons and Items_296
+    second: X_Small_Health_2
   - first:
       213: -396720916388042267
-    second: SNES - Mega Man X - Weapons and Items_297
+    second: X_Small_Health_3
   - first:
       213: -1583757045972362799
-    second: SNES - Mega Man X - Weapons and Items_298
+    second: X_Small_Health_4
   - first:
       213: -5044877467747608688
-    second: SNES - Mega Man X - Weapons and Items_299
+    second: X_Small_Energy_1
   - first:
       213: 921757403311281669
-    second: SNES - Mega Man X - Weapons and Items_300
+    second: X_Small_Energy_2
   - first:
       213: -410394000693389866
-    second: SNES - Mega Man X - Weapons and Items_301
+    second: X_Small_Energy_3
   - first:
       213: 8181130348641130419
     second: SNES - Mega Man X - Weapons and Items_302
@@ -943,31 +943,31 @@ TextureImporter:
     second: SNES - Mega Man X - Weapons and Items_312
   - first:
       213: 8384499241449577501
-    second: SNES - Mega Man X - Weapons and Items_313
+    second: X_Big_Health_1
   - first:
       213: -3046429220256738279
-    second: SNES - Mega Man X - Weapons and Items_314
+    second: X_Big_Health_2
   - first:
       213: 8479206935811602903
-    second: SNES - Mega Man X - Weapons and Items_315
+    second: X_Big_Health_3
   - first:
       213: 3590738651196469077
-    second: SNES - Mega Man X - Weapons and Items_316
+    second: X_Big_Health_4
   - first:
       213: -3277792140366996172
-    second: SNES - Mega Man X - Weapons and Items_317
+    second: X_Big_Energy_1
   - first:
       213: -9047161818267563938
-    second: SNES - Mega Man X - Weapons and Items_318
+    second: X_Big_Energy_2
   - first:
       213: 4845323774366689930
-    second: SNES - Mega Man X - Weapons and Items_319
+    second: X_Big_Energy_3
   - first:
       213: 6383320205067058387
-    second: SNES - Mega Man X - Weapons and Items_320
+    second: X_1Up_1
   - first:
       213: -1023144314703822183
-    second: SNES - Mega Man X - Weapons and Items_321
+    second: X_1Up_2
   - first:
       213: 2719777072120802940
     second: SNES - Mega Man X - Weapons and Items_322
@@ -5711,13 +5711,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_6
+      name: X_HealthBar_Topper
       rect:
         serializedVersion: 2
         x: 2
-        y: 1727
+        y: 1728
         width: 14
-        height: 4
+        height: 3
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6488,13 +6488,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_43
+      name: X_HealthBar_Empty
       rect:
         serializedVersion: 2
         x: 2
-        y: 1709
+        y: 1710
         width: 14
-        height: 16
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -7391,13 +7391,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_86
+      name: X_healthTicks
       rect:
         serializedVersion: 2
         x: 2
-        y: 1691
+        y: 1692
         width: 14
-        height: 16
+        height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -8168,7 +8168,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_123
+      name: X_HealthIcon
       rect:
         serializedVersion: 2
         x: 2
@@ -8924,7 +8924,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_159
+      name: X_Lemon_Icon
       rect:
         serializedVersion: 2
         x: 2
@@ -11780,7 +11780,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_295
+      name: X_Small_Health_1
       rect:
         serializedVersion: 2
         x: 6
@@ -11801,7 +11801,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_296
+      name: X_Small_Health_2
       rect:
         serializedVersion: 2
         x: 22
@@ -11822,7 +11822,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_297
+      name: X_Small_Health_3
       rect:
         serializedVersion: 2
         x: 40
@@ -11843,7 +11843,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_298
+      name: X_Small_Health_4
       rect:
         serializedVersion: 2
         x: 58
@@ -11864,7 +11864,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_299
+      name: X_Small_Energy_1
       rect:
         serializedVersion: 2
         x: 84
@@ -11885,7 +11885,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_300
+      name: X_Small_Energy_2
       rect:
         serializedVersion: 2
         x: 100
@@ -11906,7 +11906,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_301
+      name: X_Small_Energy_3
       rect:
         serializedVersion: 2
         x: 116
@@ -12158,7 +12158,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_313
+      name: X_Big_Health_1
       rect:
         serializedVersion: 2
         x: 3
@@ -12179,7 +12179,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_314
+      name: X_Big_Health_2
       rect:
         serializedVersion: 2
         x: 19
@@ -12200,7 +12200,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_315
+      name: X_Big_Health_3
       rect:
         serializedVersion: 2
         x: 37
@@ -12221,7 +12221,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_316
+      name: X_Big_Health_4
       rect:
         serializedVersion: 2
         x: 55
@@ -12242,7 +12242,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_317
+      name: X_Big_Energy_1
       rect:
         serializedVersion: 2
         x: 81
@@ -12263,7 +12263,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_318
+      name: X_Big_Energy_2
       rect:
         serializedVersion: 2
         x: 97
@@ -12284,7 +12284,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_319
+      name: X_Big_Energy_3
       rect:
         serializedVersion: 2
         x: 113
@@ -12305,7 +12305,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_320
+      name: X_1Up_1
       rect:
         serializedVersion: 2
         x: 137
@@ -12326,7 +12326,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SNES - Mega Man X - Weapons and Items_321
+      name: X_1Up_2
       rect:
         serializedVersion: 2
         x: 157
@@ -16572,7 +16572,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 187
-        y: 1457
+        y: 1456
         width: 28
         height: 12
       alignment: 0

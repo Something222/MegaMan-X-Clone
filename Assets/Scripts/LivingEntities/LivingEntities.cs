@@ -5,7 +5,7 @@ using UnityEngine;
 public abstract class LivingEntities : MonoBehaviour
 {
     [SerializeField] public float health=100;
-    public float maxHealth;
+    [SerializeField]private float maxHealth;
     [SerializeField]public float moveSpeed=1f;
     [SerializeField] public State currState;
     [SerializeField] public float jumpHeight=5;
@@ -13,10 +13,13 @@ public abstract class LivingEntities : MonoBehaviour
      public float dashSpeed = 2;
     [SerializeField]public Animator anim;
     [SerializeField] private float iFrames = .55f;
+
+    public float MaxHealth { get => maxHealth; set => maxHealth = value; }
+
     protected virtual void Start()
     {
         anim = GetComponent<Animator>();
-     
+        maxHealth = health;
     }
 
     //Make a death Function 

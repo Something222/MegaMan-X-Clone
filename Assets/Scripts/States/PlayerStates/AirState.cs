@@ -62,15 +62,15 @@ public class AirState :PlayerState
    
     public void Move()
     {
-      
         if(!wasDashing)
              deltaX = inputValueX * stats.moveSpeed * Time.deltaTime;
         else
             deltaX = inputValueX * stats.moveSpeed *stats.dashSpeed* Time.deltaTime;
         if (Mathf.Abs(deltaX) > 0 && !script.cantMove)
         {
+                if(MoveCheck())
                 player.transform.position = new Vector3(player.transform.position.x + deltaX, player.transform.position.y);
-                if (!MoveCheck())
+                else if(!MoveCheck() && !script.cantTransition)
                     SwitchToWallSlideState(); 
                 if (deltaX < 0 &&player.transform.localScale.x>0)
                     Flip();

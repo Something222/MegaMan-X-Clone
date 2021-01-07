@@ -157,7 +157,7 @@ MonoBehaviour:
   awakeYColliderSize: 1.41
   asleepXColliderSize: 0.86
   asleepYColliderSize: 1.41
-  damage: 10
+  damage: 1
   retreatRange: 10
   attackMoveSpeed: 3.5
   retreatMoveSpeed: 4.5

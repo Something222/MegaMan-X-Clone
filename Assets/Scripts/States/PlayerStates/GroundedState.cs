@@ -37,24 +37,20 @@ public class GroundedState : PlayerState
     //old input system
     public void Move()
     {
-
-       
             deltaX = inputValueX * stats.moveSpeed * Time.deltaTime;
-
             if (Mathf.Abs(deltaX) > 0)
             {
+            
                  if (deltaX < 0 && player.transform.localScale.x > 0)
-                    Flip();
+                  Flip();
                  else if (deltaX > 0 && player.transform.localScale.x < 0)
                   Flip();
-
                  if (MoveCheck())
-                     player.transform.position = new Vector3(player.transform.position.x + deltaX, player.transform.position.y);
+                  player.transform.position = new Vector3(player.transform.position.x + deltaX, player.transform.position.y);
                  anim.SetBool("IsRunning", true);
             }
             else
                 anim.SetBool("IsRunning", false);
-        
     }
    
 
@@ -75,6 +71,7 @@ public class GroundedState : PlayerState
         //This will cause a state change to the AirState 
         //while also adding force in y to jump
         //we need to pass whether or not we were dashing for the airspeed
+        script.StartCoroutine(AirToSlideBuffer());
         base.OnJump(context, false);
 
     }

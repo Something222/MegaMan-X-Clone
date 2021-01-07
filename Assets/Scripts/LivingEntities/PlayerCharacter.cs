@@ -7,12 +7,15 @@ public class PlayerCharacter : LivingEntities
 {
     [SerializeField] private LayerMask platformLayerMask;
     private float distToGround;
-    private BoxCollider2D capsule;
+    //private BoxCollider2D capsule;
+
+    private CapsuleCollider2D capsule;
     [SerializeField] private float heightCheck;
-   [SerializeField] new PlayerState currState;
+
+    [SerializeField] new PlayerState currState;
     Vector3 groundChecker;
     public bool cantMove;
-
+    public bool cantTransition;
     //Coroutines
     public Coroutine shootingCoroutines;
     public Coroutine StopDashing;
@@ -22,13 +25,15 @@ public class PlayerCharacter : LivingEntities
     public float DistToGround { get => distToGround; }
     public float BulletSpeed { get => bulletSpeed; }
     public float BulletXOffset { get => bulletXOffset; set => bulletXOffset = value; }
-    public BoxCollider2D Capsule { get => capsule;}
+  //  public BoxCollider2D Capsule { get => capsule;}
     public LayerMask PlatformLayerMask { get => platformLayerMask; }
+    public CapsuleCollider2D Capsule { get => capsule;}
 
 
     //BulletStuff
     [SerializeField]private float bulletSpeed=10f;
     [SerializeField] private float bulletXOffset = 1f;
+    
 
 
     public void TakeDamage(int damage)
@@ -71,7 +76,7 @@ public class PlayerCharacter : LivingEntities
     public virtual bool IsGrounded()
     {
       
-        RaycastHit2D rayCastHit = Physics2D.BoxCast(Capsule.bounds.center, Capsule.bounds.size,0,Vector2.down,.5f,PlatformLayerMask);
+        RaycastHit2D rayCastHit = Physics2D.BoxCast(Capsule.bounds.center, Capsule.bounds.size,0,Vector2.down,.1f,PlatformLayerMask);
 
         if (rayCastHit.collider != null)
         {
@@ -96,21 +101,22 @@ public class PlayerCharacter : LivingEntities
     // Start is called before the first frame update
     protected override void Start()
     {
-        capsule = GetComponent<BoxCollider2D>();
+        // Capsule = GetComponent<BoxCollider2D>();
+        capsule = GetComponent<CapsuleCollider2D>();
         distToGround = Capsule.bounds.extents.y;
         groundChecker=new Vector3(Capsule.bounds.center.x-.2f, Capsule.bounds.center.y, Capsule.bounds.center.z);
-
-
         base.Start();
+
         currState = new GroundedState(gameObject, anim,0,true,this);
-        
+      
+
     }
 
     // Update is called once per frame
     void Update()
     {
        currState=(PlayerState)currState.Process();
-       
+        Debug.Log(currState);
     }
 
     public override void Respawn()
