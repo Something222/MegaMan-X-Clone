@@ -17,7 +17,9 @@ public class DamagedState : PlayerState
     public override void Enter()
     {
         anim.SetTrigger("IsDamaged");
-      
+        script.chargeLevel = 0;
+        if (script.ChargeParticleFX.isPlaying)
+            script.ChargeParticleFX.Stop();
         base.Enter();
     }
 
@@ -51,14 +53,7 @@ public class DamagedState : PlayerState
 
     private void Recoil()
     {
-        if (facingRight)
-        {
-            rigidbody2D.velocity = new Vector2(-recoilSpeed, 0);
-        }
-        else
-        {
-            rigidbody2D.velocity = new Vector2(recoilSpeed, 0);
-        }
+        rigidbody2D.velocity=facingRight? new Vector2(-recoilSpeed, 0) : new Vector2(recoilSpeed, 0);
     }
 
 

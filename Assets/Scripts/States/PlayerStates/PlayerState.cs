@@ -18,28 +18,25 @@ public abstract class PlayerState : State
 
     public PlayerState(GameObject player, Animator anim, float inputValueX, bool facingRight, PlayerCharacter script)
     {
-            this.inputValueX = inputValueX;
-            this.player = player;
-            this.anim = anim;
-            this.phase = Phase.ENTER;
-            this.facingRight = facingRight;
-            this.script = script;
-            stats = player.GetComponent<LivingEntities>();  
+        this.inputValueX = inputValueX;
+        this.player = player;
+        this.anim = anim;
+        this.phase = Phase.ENTER;
+        this.facingRight = facingRight;
+        this.script = script;
+        stats = player.GetComponent<LivingEntities>();
     }
     public bool MoveCheck()
     {
         RaycastHit2D hit;
         Vector2 direction;
-        if (facingRight)
-            direction = Vector2.right;
-        else
-            direction = Vector2.left;
+        direction = facingRight ? Vector2.right : Vector2.left;
         if (script.IsGrounded())
-            hit = Physics2D.Raycast(script.Capsule.bounds.center, direction, 1f,script.PlatformLayerMask);
+            hit = Physics2D.Raycast(script.Capsule.bounds.center, direction, 1f, script.PlatformLayerMask);
         else
             hit = Physics2D.BoxCast(script.Capsule.bounds.center, script.Capsule.bounds.size, 0, direction, boxCastBuffer, script.PlatformLayerMask);
 
-        if(hit.collider!=null)
+        if (hit.collider != null)
             return false;
 
         return true;
@@ -49,10 +46,7 @@ public abstract class PlayerState : State
     {
         RaycastHit2D hit;
         Vector2 direction;
-        if (wallDirection)
-            direction = Vector2.right;
-        else
-            direction = Vector2.left;
+        direction = wallDirection ? Vector2.right : Vector2.left;
         hit = Physics2D.BoxCast(script.Capsule.bounds.center, script.Capsule.bounds.size, 0, direction, boxCastBuffer, script.PlatformLayerMask);
 
         if (hit.collider != null)
@@ -62,7 +56,7 @@ public abstract class PlayerState : State
     public virtual void OnMove(InputAction.CallbackContext context)
     {
         inputValueX = context.ReadValue<Vector2>().x;
-        RoundInputValueX(); 
+        RoundInputValueX();
     }
     public virtual void OnDash(InputAction.CallbackContext context)
     {
@@ -70,14 +64,15 @@ public abstract class PlayerState : State
     }
     private void RoundInputValueX()
     {
+       
         if (inputValueX < 0)
             inputValueX = -1;
         else if (inputValueX > 0)
             inputValueX = 1;
-        
+
     }
 
-    public virtual void OnJump(InputAction.CallbackContext context,bool wasDashing)
+    public virtual void OnJump(InputAction.CallbackContext context, bool wasDashing)
     {
         if (context.started)
         {
@@ -87,35 +82,33 @@ public abstract class PlayerState : State
     }
     public virtual void OnShoot(InputAction.CallbackContext context)
     {
-
+        //Could be a switch but its 3 statments not really worth it
         if (script.chargeLevel == 0)
         {
-            if (ShotPool.Instance.Objects.Count != 0)
-            {
-                SetShootingAnims();
-                GameObject obj = ShotPool.Instance.Get().gameObject;
-                SetBulletPos(obj);
-            }
+            ShootFromPool(ShotPool.Instance);
         }
-        else if(script.chargeLevel==1)
+        else if (script.chargeLevel == 1)
         {
-            if(Level1ShotPool.Instance.Objects.Count!=0)
-            {
-                SetShootingAnims();
-                GameObject obj = Level1ShotPool.Instance.Get().gameObject;
-                SetBulletPos(obj);
-
-            }
-
+            ShootFromPool(Level1ShotPool.Instance); 
         }
-        else if(script.chargeLevel==2)
+        else if (script.chargeLevel == 2)
         {
-            if(Level2ShotPool.Instance.Objects.Count!=0)
-            {
-                SetShootingAnims();
-                GameObject obj = Level2ShotPool.Instance.Get().gameObject;
-                SetBulletPos(obj);
-            }
+            ShootFromPool(Level2ShotPool.Instance);
+        }
+        if (script.ChargeParticleFX.isPlaying)
+        {
+            script.ChargeParticleFX.Stop();
+        }
+        script.chargeLevel = 0;
+    }
+    private void ShootFromPool<T>(GenericObjectPool<T> genericObjectPool) where T : Component
+    {
+        
+        if (genericObjectPool.Objects.Count != 0)
+        {
+            SetShootingAnims();
+            GameObject obj = genericObjectPool.Get().gameObject;
+            SetBulletPos(obj);
         }
     }
 
@@ -129,10 +122,7 @@ public abstract class PlayerState : State
             {
                 xScale = 1;
                 xOffSet = newpos.x + script.BulletXOffset;
-                if (script.IsGrounded())
-                    yOffSet = newpos.y;
-                else
-                    yOffSet = newpos.y + script.JumpingBulletYOffset;
+                yOffSet=script.IsGrounded()?newpos.y: newpos.y + script.JumpingBulletYOffset;
                 bulletSpeed = script.BulletSpeed;
 
             }
@@ -140,10 +130,7 @@ public abstract class PlayerState : State
             {
                 xScale = -1;
                 xOffSet = newpos.x - script.BulletXOffset;
-                if (script.IsGrounded())
-                    yOffSet = newpos.y;
-                else
-                    yOffSet = newpos.y + script.JumpingBulletYOffset;
+                yOffSet=script.IsGrounded()?newpos.y: newpos.y + script.JumpingBulletYOffset;
                 bulletSpeed = -script.BulletSpeed;
             }
             obj.transform.localScale = new Vector3(xScale, 1, 1);
@@ -221,22 +208,14 @@ public abstract class PlayerState : State
     }
     protected virtual void Flip(float DeltaX)
     {
-        if (DeltaX > 1)
-        {
-            facingRight = true;
-        }
-        else
-            facingRight = false;
+        facingRight = DeltaX > 1 ? true : false;
         Vector3 tempscale = player.transform.localScale;
         tempscale.x *= -1;
         player.transform.localScale = tempscale;
     }
     protected void RightCheck()
     {
-        if (player.transform.localScale.x > 0)
-            facingRight = true;
-        else
-            facingRight = false;
+        facingRight = player.transform.localScale.x > 0 ? true : false;
     }
     public override void Enter()
     {

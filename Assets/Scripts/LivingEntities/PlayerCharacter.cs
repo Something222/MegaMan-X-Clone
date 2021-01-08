@@ -6,37 +6,42 @@ using UnityEngine.InputSystem;
 public class PlayerCharacter : LivingEntities
 {
     [SerializeField] private LayerMask platformLayerMask;
-    private float distToGround;
-    //private BoxCollider2D capsule;
-
-    private CapsuleCollider2D capsule;
-    [SerializeField] private float heightCheck;
-
     [SerializeField] new PlayerState currState;
+
+    //Cached Variables
+    private CapsuleCollider2D capsule;
+   [SerializeField] private ParticleSystem chargeParticleFX;
+
+    //Movement Variables
     Vector3 groundChecker;
     public bool cantMove;
     public bool cantTransition;
+    [SerializeField] private float heightCheck;
+    private float distToGround;
+   
+
     //Coroutines
     public Coroutine shootingCoroutines;
     public Coroutine StopDashing;
     public Coroutine flippingCoroutine;
     public Coroutine chargeShotCoroutine;
 
-    public float DistToGround { get => distToGround; }
-    public float BulletSpeed { get => bulletSpeed; }
-    public float BulletXOffset { get => bulletXOffset; set => bulletXOffset = value; }
-  //  public BoxCollider2D Capsule { get => capsule;}
-    public LayerMask PlatformLayerMask { get => platformLayerMask; }
-    public CapsuleCollider2D Capsule { get => capsule;}
-    public float JumpingBulletYOffset { get => jumpingBulletYOffset; }
-
 
     //BulletStuff
-    [SerializeField]private float bulletSpeed=10f;
+    [SerializeField] private float bulletSpeed = 10f;
     [SerializeField] private float bulletXOffset = 1f;
     [SerializeField] private float jumpingBulletYOffset;
     public int chargeLevel;
     [SerializeField] private float chargeTime = 1f;
+
+    //Properties
+    public float DistToGround { get => distToGround; }
+    public float BulletSpeed { get => bulletSpeed; }
+    public float BulletXOffset { get => bulletXOffset; set => bulletXOffset = value; }
+    public LayerMask PlatformLayerMask { get => platformLayerMask; }
+    public CapsuleCollider2D Capsule { get => capsule;}
+    public float JumpingBulletYOffset { get => jumpingBulletYOffset; }
+    public ParticleSystem ChargeParticleFX { get => chargeParticleFX; set => chargeParticleFX = value; }
 
     public void TakeDamage(int damage)
     {
@@ -78,7 +83,7 @@ public class PlayerCharacter : LivingEntities
             currState.OnShoot(context);
             if (chargeShotCoroutine != null)
                 StopCoroutine(chargeShotCoroutine);
-            chargeLevel = 0;
+          
         }
     }
     public void OnDash(InputAction.CallbackContext context)
@@ -118,6 +123,17 @@ public class PlayerCharacter : LivingEntities
             yield return new WaitForSeconds(chargeTime);
             if (chargeLevel < 2)
                 chargeLevel++;
+            if(chargeLevel==1)
+            {
+                var main = ChargeParticleFX.main;
+                main.startColor = Color.green;
+                ChargeParticleFX.Play();
+            }
+            else if (chargeLevel==2)
+            {
+                var main = ChargeParticleFX.main;
+                main.startColor = Color.blue;
+            }
         }
     }
  
@@ -131,7 +147,7 @@ public class PlayerCharacter : LivingEntities
         base.Start();
         chargeLevel = 0;
         currState = new GroundedState(gameObject, anim,0,true,this);
-      
+        chargeParticleFX = GetComponentInChildren<ParticleSystem>();
 
     }
 
