@@ -25,7 +25,7 @@ public abstract class GenericObjectPool<T> : MonoBehaviour where T : Component
     {
      for (int i=0;i<amount;i++)
         {
-            var newObject = GameObject.Instantiate(prefab);
+            var newObject = GameObject.Instantiate(prefab,new Vector3(-99,99),Quaternion.identity);
             newObject.gameObject.SetActive(false);   
         }
     }

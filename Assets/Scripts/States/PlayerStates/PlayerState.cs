@@ -108,6 +108,15 @@ public abstract class PlayerState : State
             }
 
         }
+        else if(script.chargeLevel==2)
+        {
+            if(Level2ShotPool.Instance.Objects.Count!=0)
+            {
+                SetShootingAnims();
+                GameObject obj = Level2ShotPool.Instance.Get().gameObject;
+                SetBulletPos(obj);
+            }
+        }
     }
 
     private void SetBulletPos(GameObject obj)

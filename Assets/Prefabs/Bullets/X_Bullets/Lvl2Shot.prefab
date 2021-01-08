@@ -1480,8 +1480,8 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 6069212665887626265, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
-    - sprite: {fileID: 6818632564481159636, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
+    - sprite: {fileID: -3393259182202563143, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
+    - sprite: {fileID: -4007188370803926151, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -4840,7 +4840,7 @@ Transform:
   m_GameObject: {fileID: 4545053106513085106}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 6124685392505708945}
   m_RootOrder: 1
@@ -6293,12 +6293,12 @@ ParticleSystem:
     uvChannelMask: -1
     rowMode: 1
     sprites:
-    - sprite: {fileID: 541983245025873513, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
-    - sprite: {fileID: 4351403124272297508, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
-    - sprite: {fileID: -8196737667477609397, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
-    - sprite: {fileID: -4596511491398218505, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
-    - sprite: {fileID: 620269628582314349, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
-    - sprite: {fileID: 7242809357298471963, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
+    - sprite: {fileID: -8120631262109929158, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
+    - sprite: {fileID: -50974845601670069, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
+    - sprite: {fileID: -7119211931408782314, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
+    - sprite: {fileID: -7776887864049314015, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
+    - sprite: {fileID: -9077491214787486736, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
+    - sprite: {fileID: -8893385128844849358, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
     flipU: 0
     flipV: 0
   VelocityModule:
@@ -9641,11 +9641,11 @@ GameObject:
   - component: {fileID: 6124685392505708945}
   - component: {fileID: 3062476122218766813}
   - component: {fileID: 1991118361106229845}
-  - component: {fileID: 3574343652449691834}
   - component: {fileID: 7383747652239060087}
   - component: {fileID: 4615731194973467997}
+  - component: {fileID: 5772413844368218594}
   m_Layer: 9
-  m_Name: Lvl1Shot
+  m_Name: Lvl2Shot
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9707,7 +9707,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 3679033238804993397, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
+  m_Sprite: {fileID: 3037799517384210716, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -9728,7 +9728,7 @@ Animator:
   m_GameObject: {fileID: 6565561242809824518}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 10a4e9238ba0bc346bef75b4ce1e7efd, type: 2}
+  m_Controller: {fileID: 9100000, guid: 078daab004ba9314cb07cdd5bf95934a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9737,24 +9737,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3574343652449691834
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6565561242809824518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dd642680beaf224599f8bef5c453a0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 0
-  startingDamage: 3
-  beginShot: {fileID: 8401643872620589393}
-  endShot: {fileID: 5950139184172746466}
-  beginShotRenderer: {fileID: 5273589366452570857}
-  X: {fileID: 0}
 --- !u!70 &7383747652239060087
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -9768,8 +9750,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1.75, y: 0.75}
+  m_Offset: {x: -5.3188387e-10, y: -0.0044617658}
+  m_Size: {x: 2.0619648, y: 2.0619648}
   m_Direction: 1
 --- !u!50 &4615731194973467997
 Rigidbody2D:
@@ -9792,3 +9774,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 6
+--- !u!114 &5772413844368218594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6565561242809824518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aa3f07d2e766ec47af3a2c2ad61339e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5
+  startingDamage: 5
+  beginShot: {fileID: 8401643872620589393}
+  endShot: {fileID: 5950139184172746466}
+  beginShotRenderer: {fileID: 5273589366452570857}
+  X: {fileID: 0}

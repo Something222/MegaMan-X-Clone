@@ -1123,6 +1123,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 845726715}
+  - component: {fileID: 845726716}
   m_Layer: 0
   m_Name: ShotPoolLevel2Charge
   m_TagString: Untagged
@@ -1144,6 +1145,20 @@ Transform:
   m_Father: {fileID: 1933215170}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &845726716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845726714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e387735db360c84abe128ace668649c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5772413844368218594, guid: 822bcaca124e8024b85ec682142ce11b, type: 3}
+  amount: 1
 --- !u!1 &998070913 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8231176811795133980, guid: 18713c27383e86a40b7a5ddd02e2f566, type: 3}
@@ -1680,7 +1695,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933215169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -12.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 754491468}
