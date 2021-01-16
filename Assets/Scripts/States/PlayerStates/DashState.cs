@@ -101,7 +101,7 @@ public class DashState : PlayerState
         deltaX = inputValueX * stats.moveSpeed*stats.dashSpeed * Time.deltaTime;
         if (Mathf.Abs(deltaX) > 0)
         {
-            if(MoveCheck())
+            if(MoveCheckDash())
             player.transform.position = new Vector3(player.transform.position.x + deltaX, player.transform.position.y);
             if (deltaX < 0 && facingRight)
                 Flip();

@@ -672,7 +672,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343572725}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.05000031, y: -0.20000005, z: -10}
+  m_LocalPosition: {x: 0.05000025, y: -0.20000005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1466513475}
@@ -1330,7 +1330,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1446754184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.05000031, y: -0.20000005, z: -10}
+  m_LocalPosition: {x: 0.05000025, y: -0.20000005, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1528748197}
@@ -1428,7 +1428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 47.99994, y: 330.1}
+  m_AnchoredPosition: {x: 47.99994, y: 326}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1515378187
@@ -1790,12 +1790,8 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 998070914, guid: 18713c27383e86a40b7a5ddd02e2f566, type: 3}
-      propertyPath: dashTransitionTimer
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 998070920, guid: 18713c27383e86a40b7a5ddd02e2f566, type: 3}
-      propertyPath: m_Direction
-      value: 0
+      propertyPath: heightCheck
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 8231176811795133976, guid: 18713c27383e86a40b7a5ddd02e2f566, type: 3}
       propertyPath: m_LocalPosition.x

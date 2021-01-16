@@ -15,6 +15,7 @@ public abstract class PlayerState : State
     protected float boxCastBuffer = .35f;
     protected Rigidbody2D rigidbody2D;
     protected bool flippingRoutineRunning;
+    protected float airToSlideBufferTimer = .2f;
 
     public PlayerState(GameObject player, Animator anim, float inputValueX, bool facingRight, PlayerCharacter script)
     {
@@ -32,9 +33,22 @@ public abstract class PlayerState : State
         Vector2 direction;
         direction = facingRight ? Vector2.right : Vector2.left;
         if (script.IsGrounded())
-            hit = Physics2D.Raycast(script.CapsuleCollider.bounds.center, direction, 1f, script.PlatformLayerMask);
+            hit = Physics2D.BoxCast(script.CapsuleCollider.bounds.center,new Vector2 (script.CapsuleCollider.bounds.size.x,script.CapsuleCollider.bounds.size.y-.5f), 0f, direction, boxCastBuffer, script.PlatformLayerMask);
+        //hit = Physics2D.Raycast(script.CapsuleCollider.bounds.center, direction, 1f, script.PlatformLayerMask);
         else
             hit = Physics2D.BoxCast(script.CapsuleCollider.bounds.center, script.CapsuleCollider.bounds.size, 0f, direction, boxCastBuffer, script.PlatformLayerMask);
+
+        if (hit.collider != null)
+            return false;
+
+        return true;
+    }
+    public bool MoveCheckDash()
+    {
+        RaycastHit2D hit;
+        Vector2 direction;
+        direction = facingRight ? Vector2.right : Vector2.left;
+        hit = Physics2D.Raycast(script.CapsuleCollider.bounds.center, direction, script.CapsuleCollider.bounds.size.x/2+.1f, script.PlatformLayerMask);
 
         if (hit.collider != null)
             return false;
@@ -76,6 +90,7 @@ public abstract class PlayerState : State
     {
         if (context.started)
         {
+            script.StartCoroutine(AirToSlideBuffer());
             player.GetComponent<Rigidbody2D>().velocity = new Vector2(deltaX, stats.jumpHeight);
             SwitchToAirPhase(wasDashing);
         }
@@ -176,7 +191,7 @@ public abstract class PlayerState : State
     public IEnumerator AirToSlideBuffer()
     {
         script.cantTransition = true;
-        yield return new WaitForSeconds(.1f);
+        yield return new WaitForSeconds(airToSlideBufferTimer);
         script.cantTransition = false;
     }
 

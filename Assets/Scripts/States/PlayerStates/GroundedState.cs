@@ -76,7 +76,6 @@ public class GroundedState : PlayerState
         //This will cause a state change to the AirState 
         //while also adding force in y to jump
         //we need to pass whether or not we were dashing for the airspeed
-        script.StartCoroutine(AirToSlideBuffer());
         base.OnJump(context, false);
 
     }

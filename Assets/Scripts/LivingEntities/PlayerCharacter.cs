@@ -9,8 +9,8 @@ public class PlayerCharacter : LivingEntities
     [SerializeField] new PlayerState currState;
 
     //Cached Variables
-    private CapsuleCollider2D capsuleCollider;
-    private BoxCollider2D boxCollider;
+   [SerializeField]  private CapsuleCollider2D capsuleCollider;
+    [SerializeField]private CapsuleCollider2D FeetCollider;
    [SerializeField] private ParticleSystem chargeParticleFX;
 
 
@@ -68,7 +68,7 @@ public class PlayerCharacter : LivingEntities
     public float AirColliderSizeY { get => airCapsuleColliderSizeY;  }
     public float GroundedBoxColliderSizeX { get => groundedBoxColliderSizeX;}
     public float AirBoxColliderSizeX { get => airBoxColliderSizeX; }
-    public BoxCollider2D BoxCollider { get => boxCollider;}
+    public CapsuleCollider2D BoxCollider { get => FeetCollider;}
     public float DashColliderSizeX { get => dashColliderSizeX; }
     public float DashColliderSizeY { get => dashColliderSizeY;  }
 
@@ -122,7 +122,7 @@ public class PlayerCharacter : LivingEntities
     public virtual bool IsGrounded()
     {
       
-        RaycastHit2D rayCastHit = Physics2D.BoxCast(CapsuleCollider.bounds.center, CapsuleCollider.bounds.size,0,Vector2.down,.25f,PlatformLayerMask);
+        RaycastHit2D rayCastHit = Physics2D.BoxCast(CapsuleCollider.bounds.center, CapsuleCollider.bounds.size,0,Vector2.down,heightCheck,PlatformLayerMask);
 
         if (rayCastHit.collider != null)
         {
@@ -177,14 +177,15 @@ public class PlayerCharacter : LivingEntities
     protected override void Start()
     {
         // Capsule = GetComponent<BoxCollider2D>();
-        capsuleCollider = GetComponent<CapsuleCollider2D>();
+        // capsuleCollider = GetComponent<CapsuleCollider2D>();
+        // FeetCollider = GetComponent<BoxCollider2D>();
         distToGround = CapsuleCollider.bounds.extents.y;
         groundChecker=new Vector3(CapsuleCollider.bounds.center.x-.2f, CapsuleCollider.bounds.center.y, CapsuleCollider.bounds.center.z);
         base.Start();
         chargeLevel = 0;
         currState = new GroundedState(gameObject, anim,0,true,this);
         chargeParticleFX = GetComponentInChildren<ParticleSystem>();
-        boxCollider = GetComponent<BoxCollider2D>();
+      
     }
 
     // Update is called once per frame
