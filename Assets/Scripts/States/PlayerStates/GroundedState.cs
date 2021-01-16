@@ -13,10 +13,15 @@ public class GroundedState : PlayerState
 
     public override void Enter()
     {
-     
+        if (script.BoxCollider.enabled == false)
+            script.BoxCollider.enabled = true;
+        script.CapsuleCollider.direction = CapsuleDirection2D.Vertical;
+        script.CapsuleCollider.size = new Vector2(script.GroundedColliderSizeX, script.GroundedColliderSizeY);
+        script.BoxCollider.size = new Vector2(script.GroundedBoxColliderSizeX, script.BoxCollider.size.y);
         anim.SetTrigger("HitGround");
         base.Enter();
        
+
     }
 
     public override void Exit()

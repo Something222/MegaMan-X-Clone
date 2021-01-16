@@ -9,8 +9,10 @@ public class PlayerCharacter : LivingEntities
     [SerializeField] new PlayerState currState;
 
     //Cached Variables
-    private CapsuleCollider2D capsule;
+    private CapsuleCollider2D capsuleCollider;
+    private BoxCollider2D boxCollider;
    [SerializeField] private ParticleSystem chargeParticleFX;
+
 
     //Movement Variables
     Vector3 groundChecker;
@@ -18,7 +20,25 @@ public class PlayerCharacter : LivingEntities
     public bool cantTransition;
     [SerializeField] private float heightCheck;
     private float distToGround;
-   
+
+    //ColliderSizes capsule
+    [SerializeField] private float groundedCapsuleColliderSizeX;
+    [SerializeField] private float groundedCapsuleColliderSizeY;
+    [SerializeField] private float airCapsuleColliderSizeX;
+    [SerializeField] private float airCapsuleColliderSizeY;
+
+
+    //ColliderSizes Box
+    [SerializeField] private float groundedBoxColliderSizeX;
+    [SerializeField] private float airBoxColliderSizeX;
+
+    //ColliderSizes Dash
+    [SerializeField] private float dashColliderSizeX;
+    [SerializeField] private float dashColliderSizeY;
+
+    //Dash Check
+    public bool dashTransitioning;
+    [SerializeField] private float dashTransitionTimer;
 
     //Coroutines
     public Coroutine shootingCoroutines;
@@ -39,9 +59,18 @@ public class PlayerCharacter : LivingEntities
     public float BulletSpeed { get => bulletSpeed; }
     public float BulletXOffset { get => bulletXOffset; set => bulletXOffset = value; }
     public LayerMask PlatformLayerMask { get => platformLayerMask; }
-    public CapsuleCollider2D Capsule { get => capsule;}
+    public CapsuleCollider2D CapsuleCollider { get => capsuleCollider;}
     public float JumpingBulletYOffset { get => jumpingBulletYOffset; }
     public ParticleSystem ChargeParticleFX { get => chargeParticleFX; set => chargeParticleFX = value; }
+    public float GroundedColliderSizeX { get => groundedCapsuleColliderSizeX; }
+    public float GroundedColliderSizeY { get => groundedCapsuleColliderSizeY;  }
+    public float AirColliderSizeX { get => airCapsuleColliderSizeX; }
+    public float AirColliderSizeY { get => airCapsuleColliderSizeY;  }
+    public float GroundedBoxColliderSizeX { get => groundedBoxColliderSizeX;}
+    public float AirBoxColliderSizeX { get => airBoxColliderSizeX; }
+    public BoxCollider2D BoxCollider { get => boxCollider;}
+    public float DashColliderSizeX { get => dashColliderSizeX; }
+    public float DashColliderSizeY { get => dashColliderSizeY;  }
 
     public void TakeDamage(int damage)
     {
@@ -93,7 +122,7 @@ public class PlayerCharacter : LivingEntities
     public virtual bool IsGrounded()
     {
       
-        RaycastHit2D rayCastHit = Physics2D.BoxCast(Capsule.bounds.center, Capsule.bounds.size,0,Vector2.down,.25f,PlatformLayerMask);
+        RaycastHit2D rayCastHit = Physics2D.BoxCast(CapsuleCollider.bounds.center, CapsuleCollider.bounds.size,0,Vector2.down,.25f,PlatformLayerMask);
 
         if (rayCastHit.collider != null)
         {
@@ -136,19 +165,26 @@ public class PlayerCharacter : LivingEntities
             }
         }
     }
+
+    public IEnumerator DashStarted()
+    {
+        dashTransitioning = true;
+        yield return new WaitForSeconds(dashTransitionTimer);
+        dashTransitioning = false;
+    }
  
     // Start is called before the first frame update
     protected override void Start()
     {
         // Capsule = GetComponent<BoxCollider2D>();
-        capsule = GetComponent<CapsuleCollider2D>();
-        distToGround = Capsule.bounds.extents.y;
-        groundChecker=new Vector3(Capsule.bounds.center.x-.2f, Capsule.bounds.center.y, Capsule.bounds.center.z);
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
+        distToGround = CapsuleCollider.bounds.extents.y;
+        groundChecker=new Vector3(CapsuleCollider.bounds.center.x-.2f, CapsuleCollider.bounds.center.y, CapsuleCollider.bounds.center.z);
         base.Start();
         chargeLevel = 0;
         currState = new GroundedState(gameObject, anim,0,true,this);
         chargeParticleFX = GetComponentInChildren<ParticleSystem>();
-
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame

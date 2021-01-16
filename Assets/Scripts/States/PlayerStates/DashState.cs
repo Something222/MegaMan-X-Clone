@@ -33,6 +33,12 @@ public class DashState : PlayerState
     }
     public override void Enter()
     {
+        script.StartCoroutine(script.DashStarted());
+        script.BoxCollider.enabled = false;
+        script.CapsuleCollider.direction = CapsuleDirection2D.Horizontal;
+        script.CapsuleCollider.size = new Vector2(script.DashColliderSizeX, script.DashColliderSizeY);
+
+
         if (facingRight)
             inputValueX = 1;
         else
@@ -45,7 +51,7 @@ public class DashState : PlayerState
     public override void Update()
     {
         Move();
-        if (script != null && !script.IsGrounded())
+        if (script != null && !script.IsGrounded() &&!script.dashTransitioning)
             SwitchToAirPhase(true);
     }
     public override void Exit()

@@ -9,9 +9,10 @@ public class WallSlideState : PlayerState
     private bool wallDirection;
     private bool dashing;
     private float wallJumpForce=5f;
-
+    
     public WallSlideState(GameObject player, Animator anim, float inputValueX, bool facingRight, PlayerCharacter script) : base(player, anim, inputValueX, facingRight, script)
     {
+
     }
    
 

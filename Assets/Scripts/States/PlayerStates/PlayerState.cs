@@ -12,7 +12,7 @@ public abstract class PlayerState : State
     protected Animator anim;
     protected PlayerCharacter script;
     protected GameObject player;
-    protected float boxCastBuffer = .29f;
+    protected float boxCastBuffer = .35f;
     protected Rigidbody2D rigidbody2D;
     protected bool flippingRoutineRunning;
 
@@ -32,9 +32,9 @@ public abstract class PlayerState : State
         Vector2 direction;
         direction = facingRight ? Vector2.right : Vector2.left;
         if (script.IsGrounded())
-            hit = Physics2D.Raycast(script.Capsule.bounds.center, direction, 1f, script.PlatformLayerMask);
+            hit = Physics2D.Raycast(script.CapsuleCollider.bounds.center, direction, 1f, script.PlatformLayerMask);
         else
-            hit = Physics2D.BoxCast(script.Capsule.bounds.center, script.Capsule.bounds.size, 0, direction, boxCastBuffer, script.PlatformLayerMask);
+            hit = Physics2D.BoxCast(script.CapsuleCollider.bounds.center, script.CapsuleCollider.bounds.size, 0f, direction, boxCastBuffer, script.PlatformLayerMask);
 
         if (hit.collider != null)
             return false;
@@ -47,7 +47,7 @@ public abstract class PlayerState : State
         RaycastHit2D hit;
         Vector2 direction;
         direction = wallDirection ? Vector2.right : Vector2.left;
-        hit = Physics2D.BoxCast(script.Capsule.bounds.center, script.Capsule.bounds.size, 0, direction, boxCastBuffer, script.PlatformLayerMask);
+        hit = Physics2D.BoxCast(script.CapsuleCollider.bounds.center, script.CapsuleCollider.bounds.size, 0, direction, boxCastBuffer, script.PlatformLayerMask);
 
         if (hit.collider != null)
             return false;

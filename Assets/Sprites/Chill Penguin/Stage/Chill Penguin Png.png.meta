@@ -53,6 +53,33 @@ TextureImporter:
   - first:
       213: -5477855581150431809
     second: OutsideBrick_13
+  - first:
+      213: 2611369119363040700
+    second: Outside_Brick_15
+  - first:
+      213: -7764345046206231577
+    second: Chill Penguin Png_16
+  - first:
+      213: -1528141783018164704
+    second: Chill_Penguin_Background_Elements_1
+  - first:
+      213: -6299982097481152056
+    second: Chill_Penguin_Inside_Brick_4
+  - first:
+      213: -4330150548002426264
+    second: Chill_Penguin_BackGround_Elements_2
+  - first:
+      213: 8753933880570435512
+    second: Chill_Penguin_Inside_Brick_2
+  - first:
+      213: -4747577558433455864
+    second: Chill_Penguin_Inside_Brick_5
+  - first:
+      213: 8904407474144175160
+    second: Chill Penguin Png_6
+  - first:
+      213: -4930179969567103977
+    second: Chill Penguin Png_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -155,8 +182,8 @@ TextureImporter:
       name: Outside_Brick_1
       rect:
         serializedVersion: 2
-        x: 874
-        y: 308
+        x: 873
+        y: 307
         width: 32
         height: 32
       alignment: 0
@@ -302,7 +329,7 @@ TextureImporter:
       name: Outside_Brick_8
       rect:
         serializedVersion: 2
-        x: 1066
+        x: 1064
         y: 404
         width: 32
         height: 32
@@ -471,7 +498,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1130
-        y: 340
+        y: 339
         width: 32
         height: 32
       alignment: 0
@@ -483,6 +510,195 @@ TextureImporter:
       bones: []
       spriteID: fb533a23f5fbaf3b0800000000000000
       internalID: -5477855581150431809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill Penguin Png_2
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 340
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb50f01e0627d3420800000000000000
+      internalID: 2611369119363040700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill Penguin Png_3
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 308
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb405751518f3490800000000000000
+      internalID: -7764345046206231577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill_Penguin_Background_Elements_1
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 340
+        width: 164
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e25c01523facae0800000000000000
+      internalID: -1528141783018164704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill_Penguin_BackGround_Elements_2
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 363
+        width: 163
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8623a5ac40738e3c0800000000000000
+      internalID: -4330150548002426264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill Penguin Png_4
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 52
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b758aaeb783c7970800000000000000
+      internalID: 8753933880570435512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill Penguin Png_5
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 115
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9c05c39a7f198a0800000000000000
+      internalID: -6299982097481152056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill_Penguin_Inside_Brick_5
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 188
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5032959, y: 0.41767073}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80125f54d573d1eb0800000000000000
+      internalID: -4747577558433455864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill Penguin Png_6
+      rect:
+        serializedVersion: 2
+        x: 1931
+        y: 85
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83462bf8b6fc29b70800000000000000
+      internalID: 8904407474144175160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill Penguin Png_7
+      rect:
+        serializedVersion: 2
+        x: 1962
+        y: 155
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5032959, y: 0.41767073}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714e43b507b749bb0800000000000000
+      internalID: -4930179969567103977
       vertices: []
       indices: 
       edges: []

@@ -20,7 +20,11 @@ public class AirState :PlayerState
             anim.SetBool("IsJumping", true);
         else if(rigidbody2D.velocity.y<=0)
             anim.SetBool("IsFalling", true);
-      
+        if (script.BoxCollider.enabled == false)
+            script.BoxCollider.enabled = true;
+        script.CapsuleCollider.direction = CapsuleDirection2D.Vertical;
+        script.BoxCollider.size = new Vector2(script.AirBoxColliderSizeX, script.BoxCollider.size.y);
+        script.CapsuleCollider.size = new Vector2(script.AirColliderSizeX, script.AirColliderSizeY);
     }
 
     public override void Exit()
