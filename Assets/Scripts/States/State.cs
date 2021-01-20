@@ -20,8 +20,8 @@ public abstract class State
     public virtual State Process()
     {
         if (phase == Phase.ENTER) Enter();
-        if (phase == Phase.UPDATE) Update();
-        if (phase == Phase.EXIT)
+        else if (phase == Phase.UPDATE) Update();
+        else if (phase == Phase.EXIT)
         {
             Exit();
             return nextState;

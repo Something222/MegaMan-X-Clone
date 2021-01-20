@@ -576,7 +576,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1365724127561171342, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
+  m_Sprite: {fileID: 1365724127561171342, guid: 062274ad33e82f74db0e568d671274a6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1239,7 +1239,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1936422637113803308, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
+  m_Sprite: {fileID: -1936422637113803308, guid: 062274ad33e82f74db0e568d671274a6, type: 3}
   m_Type: 2
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1451,7 +1451,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2304276205507180519, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
+  m_Sprite: {fileID: -2304276205507180519, guid: 062274ad33e82f74db0e568d671274a6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1588,7 +1588,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.8, y: 0}
+  m_AnchoredPosition: {x: -0.000044703, y: 0}
   m_SizeDelta: {x: 100, y: 217}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1839909354
@@ -1611,7 +1611,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3359605424471550250, guid: b7d5930663056eb45bbc6b945956d640, type: 3}
+  m_Sprite: {fileID: 3359605424471550250, guid: 062274ad33e82f74db0e568d671274a6, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1793,6 +1793,30 @@ PrefabInstance:
       propertyPath: heightCheck
       value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 998070914, guid: 18713c27383e86a40b7a5ddd02e2f566, type: 3}
+      propertyPath: groundedCapsuleColliderSizeX
+      value: 1.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 998070914, guid: 18713c27383e86a40b7a5ddd02e2f566, type: 3}
+      propertyPath: groundedCapsuleColliderSizeY
+      value: 2.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 998070920, guid: 18713c27383e86a40b7a5ddd02e2f566, type: 3}
+      propertyPath: m_Offset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 998070920, guid: 18713c27383e86a40b7a5ddd02e2f566, type: 3}
+      propertyPath: m_Size.y
+      value: 2.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 998070920, guid: 18713c27383e86a40b7a5ddd02e2f566, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 998070920, guid: 18713c27383e86a40b7a5ddd02e2f566, type: 3}
+      propertyPath: m_Size.x
+      value: 1.26
+      objectReference: {fileID: 0}
     - target: {fileID: 8231176811795133976, guid: 18713c27383e86a40b7a5ddd02e2f566, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.049999952
@@ -1837,9 +1861,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8231176811795133977, guid: 18713c27383e86a40b7a5ddd02e2f566, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 8231176811795133980, guid: 18713c27383e86a40b7a5ddd02e2f566, type: 3}
       propertyPath: m_Name
       value: X
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8231176811795133982, guid: 18713c27383e86a40b7a5ddd02e2f566, type: 3}
+      propertyPath: m_Interpolate
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8231176811795133982, guid: 18713c27383e86a40b7a5ddd02e2f566, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8734820908949073737, guid: 18713c27383e86a40b7a5ddd02e2f566, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 18713c27383e86a40b7a5ddd02e2f566, type: 3}

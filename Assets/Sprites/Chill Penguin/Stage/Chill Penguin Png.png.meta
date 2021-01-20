@@ -152,6 +152,39 @@ TextureImporter:
   - first:
       213: 7994473728374502966
     second: Chill_Penguin_Outside_28
+  - first:
+      213: -4748921625938422490
+    second: Chill Penguin Png_8
+  - first:
+      213: 7683579794911886287
+    second: Chill Penguin Png_9
+  - first:
+      213: 3308271419060609402
+    second: Chill Penguin Png_10
+  - first:
+      213: 2246997251369504730
+    second: Chill Penguin Png_11
+  - first:
+      213: 1522709700411455434
+    second: Chill Penguin Png_13
+  - first:
+      213: 7028776006736478391
+    second: Chill Penguin Png_14
+  - first:
+      213: 5849780695255757230
+    second: Chill Penguin Png_15
+  - first:
+      213: -2863078149181620978
+    second: Chill Penguin Png_16
+  - first:
+      213: -2586217887274024736
+    second: Chill Penguin Png_17
+  - first:
+      213: 4047663321433208677
+    second: Chill_Penguin_Section_2
+  - first:
+      213: -5079030630567827250
+    second: Chill_Penguin_Section_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1149,6 +1182,195 @@ TextureImporter:
       bones: []
       spriteID: 63674f9df7312fe60800000000000000
       internalID: 7994473728374502966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill Penguin Png_8
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 303
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49999237, y: 0.49999905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62515cb21f0781eb0800000000000000
+      internalID: -4748921625938422490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill Penguin Png_9
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 335
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49999237, y: 0.49999905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb77173d1f81aa60800000000000000
+      internalID: 7683579794911886287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill Penguin Png_10
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 399
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49999237, y: 0.49999905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a716fa1e35759ed20800000000000000
+      internalID: 3308271419060609402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill Penguin Png_11
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 399
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49999237, y: 0.49999905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf88235810fe2f10800000000000000
+      internalID: 2246997251369504730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill Penguin Png_13
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 283
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49999237, y: 0.49999905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7f015a760c12510800000000000000
+      internalID: 1522709700411455434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill Penguin Png_14
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 283
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49999237, y: 0.49999905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0015fb98a3b8160800000000000000
+      internalID: 7028776006736478391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill Penguin Png_15
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 251
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49999237, y: 0.49999905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea138a28c889e2150800000000000000
+      internalID: 5849780695255757230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill Penguin Png_16
+      rect:
+        serializedVersion: 2
+        x: 1770
+        y: 251
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49999237, y: 0.49999905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0db8d1b79d4448d0800000000000000
+      internalID: -2863078149181620978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill Penguin Png_17
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 221
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.49999237, y: 0.49999905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0454da888eb1cd0800000000000000
+      internalID: -2586217887274024736
       vertices: []
       indices: 
       edges: []

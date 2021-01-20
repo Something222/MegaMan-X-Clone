@@ -1,0 +1,583 @@
+fileFormatVersion: 2
+guid: e7d9e6510a2c82a4fbeecc513f97ebac
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3957719666750220562
+    second: Chill_Penguin_Outside_3
+  - first:
+      213: -8940996621839262481
+    second: Chill_Penguin_Outside_4
+  - first:
+      213: -7419350493794520534
+    second: Chill_Penguin_Outside_8
+  - first:
+      213: -7419350493794520534
+    second: Chill_Penguin_Outside_6
+  - first:
+      213: -3186348102640459470
+    second: Chill_Penguin_Outside_8
+  - first:
+      213: -8255828758395099974
+    second: Chill_Penguin_Outside_10
+  - first:
+      213: 1467296719462025099
+    second: Chill_Penguin_Outside_7
+  - first:
+      213: 4414812008451634880
+    second: Chill_Penguin_Outside_11
+  - first:
+      213: 3787612660327078742
+    second: Chill_Penguin_Outside_12
+  - first:
+      213: 5337557889926423770
+    second: Chill_Penguin_Outside_13
+  - first:
+      213: -1510269559326816043
+    second: Chill_Penguin_Outside_14
+  - first:
+      213: 3169422570648129070
+    second: Chill_Penguin_Outside_16
+  - first:
+      213: 4555183844981615265
+    second: Chill_Penguin_Outside_15
+  - first:
+      213: -3615752052569543505
+    second: Chill_Penguin_Outside_5
+  - first:
+      213: 5031601573312002442
+    second: Chill Penguin Png_1
+  - first:
+      213: -2778567558554451882
+    second: Chill_Penguin_Outside_9
+  - first:
+      213: -5477855581150431809
+    second: Chill_Penguin_Outside_17
+  - first:
+      213: 2611369119363040700
+    second: Outside_Brick_15
+  - first:
+      213: -7764345046206231577
+    second: Chill Penguin Png_16
+  - first:
+      213: -1528141783018164704
+    second: Chill_Penguin_Background_Elements_1
+  - first:
+      213: -6299982097481152056
+    second: Chill_Penguin_Inside_Brick_4
+  - first:
+      213: -4330150548002426264
+    second: Chill_Penguin_BackGround_Elements_2
+  - first:
+      213: 8753933880570435512
+    second: Chill_Penguin_Inside_Brick_2
+  - first:
+      213: -4747577558433455864
+    second: Chill_Penguin_Inside_5
+  - first:
+      213: 8904407474144175160
+    second: Chill_Penguin_Inside_2
+  - first:
+      213: -4930179969567103977
+    second: Chill_Penguin_Inside_4
+  - first:
+      213: -5131981639563019603
+    second: Chill_Penguin_Outside_7
+  - first:
+      213: -6872996691745837600
+    second: Chill_Penguin_Outside_2
+  - first:
+      213: -6623060363185351723
+    second: Chill_Penguin_Outside_25
+  - first:
+      213: -5428648730173024263
+    second: Chill_Penguin_Inside_1
+  - first:
+      213: 6364173366119014208
+    second: Chill_Penguin_Inside_3
+  - first:
+      213: 4043204233938041400
+    second: Chill_Penguin_Inside_2
+  - first:
+      213: 3859463273726988487
+    second: Chill_Penguin_Inside_4
+  - first:
+      213: 3859463273726988487
+    second: Chill Penguin Png_7
+  - first:
+      213: 1571642475974772755
+    second: Chill_Penguin_Outside_18
+  - first:
+      213: -7037541825410524834
+    second: Chill_Penguin_Outside_19
+  - first:
+      213: 6096906356247988964
+    second: Chill_Penguin_Outside_20
+  - first:
+      213: -544259737387769544
+    second: Chill_Penguin_Outside_21
+  - first:
+      213: 1778812626602201883
+    second: Chill_Penguin_Outside_23
+  - first:
+      213: 7877807391758980775
+    second: Chill_Penguin_Outside_23
+  - first:
+      213: -5569078151769105353
+    second: Chill_Penguin_Inside_6
+  - first:
+      213: 8302245222698113394
+    second: Chill_Penguin_Inside_7
+  - first:
+      213: -5131981639563019603
+    second: Chill Penguin Outside_24
+  - first:
+      213: 2611369119363040700
+    second: Chill Penguin Png_2
+  - first:
+      213: -5569078151769105353
+    second: Chill Penguin Png_0
+  - first:
+      213: 8753933880570435512
+    second: Chill Penguin Png_4
+  - first:
+      213: 4043204233938041400
+    second: Chill_Penguin_Outside_27
+  - first:
+      213: 4980627977497150887
+    second: Chill_Penguin_Outside_26
+  - first:
+      213: -8803336233689482810
+    second: Chill Penguin Png_6
+  - first:
+      213: 7994473728374502966
+    second: Chill_Penguin_Outside_28
+  - first:
+      213: -4748921625938422490
+    second: Chill Penguin Png_8
+  - first:
+      213: 7683579794911886287
+    second: Chill Penguin Png_9
+  - first:
+      213: 3308271419060609402
+    second: Chill Penguin Png_10
+  - first:
+      213: 2246997251369504730
+    second: Chill Penguin Png_11
+  - first:
+      213: 1522709700411455434
+    second: Chill Penguin Png_13
+  - first:
+      213: 7028776006736478391
+    second: Chill Penguin Png_14
+  - first:
+      213: 5849780695255757230
+    second: Chill Penguin Png_15
+  - first:
+      213: -2863078149181620978
+    second: Chill Penguin Png_16
+  - first:
+      213: -2586217887274024736
+    second: Chill Penguin Png_17
+  - first:
+      213: 4047663321433208677
+    second: Chill_Penguin_Section_2
+  - first:
+      213: -5079030630567827250
+    second: Chill_Penguin_Section_1
+  - first:
+      213: 6305762863400731816
+    second: CaveEntrance_1
+  - first:
+      213: -5874283511130096063
+    second: CaveEntrance_2
+  - first:
+      213: -8912632459964566293
+    second: Cave_Entrance_Top
+  - first:
+      213: 8193140041449541642
+    second: Cave_Entrance_Bottom
+  - first:
+      213: 6305762863400731816
+    second: Chill Penguin PngNotTileMap_0
+  - first:
+      213: 3388529410573118122
+    second: Chill Penguin PngNotTileMap_1
+  - first:
+      213: -1517044118044703017
+    second: Chill_Penguin_Section_3
+  - first:
+      213: 4473234800628537358
+    second: Orange_Cave_Middle
+  - first:
+      213: 7316996963117495047
+    second: Orange_Cave_Top
+  - first:
+      213: 3950823299011586843
+    second: Chill Penguin PngNotTileMap_5
+  - first:
+      213: -3395650845381237095
+    second: Chill Penguin PngNotTileMap_6
+  - first:
+      213: 8995933637314179065
+    second: Chill Penguin PngNotTileMap_7
+  - first:
+      213: 7861826766428000618
+    second: Chill Penguin PngNotTileMap_8
+  - first:
+      213: -3491700040942086000
+    second: Chill Penguin PngNotTileMap_9
+  - first:
+      213: -3692000084559527144
+    second: Chill_Penguin_Section_4
+  - first:
+      213: 8095271788538254880
+    second: Orange_Cave_Bottom
+  - first:
+      213: 4473234800628537358
+    second: Chill Penguin PngNotTileMap_3
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chill_Penguin_Section_2
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 51
+        width: 752
+        height: 480
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567776c68503c2830800000000000000
+      internalID: 4047663321433208677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill_Penguin_Section_1
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 309
+        width: 1549
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec82da52d88a389b0800000000000000
+      internalID: -5079030630567827250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill Penguin PngNotTileMap_0
+      rect:
+        serializedVersion: 2
+        x: 2525
+        y: 66
+        width: 50
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4c9d63ae1928750800000000000000
+      internalID: 6305762863400731816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill Penguin PngNotTileMap_1
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 456
+        width: 16
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14ef729154a5a7ea0800000000000000
+      internalID: -5874283511130096063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave_Entrance_Top
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 476
+        width: 9
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be43232bff7ff4480800000000000000
+      internalID: -8912632459964566293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cave_Entrance_Middle
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 467
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0011a56571e3b170800000000000000
+      internalID: 8193140041449541642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill_Penguin_Section_3
+      rect:
+        serializedVersion: 2
+        x: 2314
+        y: 52
+        width: 512
+        height: 990
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6895b896062fae0800000000000000
+      internalID: -1517044118044703017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill_Penguin_Section_4
+      rect:
+        serializedVersion: 2
+        x: 2839
+        y: 564
+        width: 4576
+        height: 741
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8130e11fb7163ccc0800000000000000
+      internalID: -3692000084559527144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Cave_Middle
+      rect:
+        serializedVersion: 2
+        x: 4314
+        y: 691
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02650141dce285070800000000000000
+      internalID: 8095271788538254880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Cave_Bottom
+      rect:
+        serializedVersion: 2
+        x: 4306
+        y: 622
+        width: 32
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e081168d95f141e30800000000000000
+      internalID: 4473234800628537358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange_Cave_Top
+      rect:
+        serializedVersion: 2
+        x: 4338
+        y: 700
+        width: 8
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703fa3988f13b8560800000000000000
+      internalID: 7316996963117495047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

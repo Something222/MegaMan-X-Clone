@@ -34,7 +34,7 @@ public class DashState : PlayerState
     public override void Enter()
     {
         script.StartCoroutine(script.DashStarted());
-        script.BoxCollider.enabled = false;
+       // script.BoxCollider.enabled = false;
         script.CapsuleCollider.direction = CapsuleDirection2D.Horizontal;
         script.CapsuleCollider.size = new Vector2(script.DashColliderSizeX, script.DashColliderSizeY);
 
