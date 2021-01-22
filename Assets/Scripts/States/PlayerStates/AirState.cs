@@ -42,11 +42,11 @@ public class AirState :PlayerState
         {
             if (context.canceled && rigidbody2D.velocity.y > 0 && script.cantMove)
             {
-                rigidbody2D.velocity = new Vector2(deltaX, rigidbody2D.velocity.y);
+                rigidbody2D.velocity = new Vector2(DeltaX, rigidbody2D.velocity.y);
                 script.cantMove = false;
             }
             else if (context.canceled && rigidbody2D.velocity.y > 0 && !script.cantMove)
-                rigidbody2D.velocity = new Vector2(deltaX, 0);
+                rigidbody2D.velocity = new Vector2(DeltaX, 0);
         }
     }
 
@@ -70,15 +70,15 @@ public class AirState :PlayerState
              deltaX = inputValueX * stats.moveSpeed * Time.deltaTime;
         else
             deltaX = inputValueX * stats.moveSpeed *stats.dashSpeed* Time.deltaTime;
-        if (Mathf.Abs(deltaX) > 0 && !script.cantMove)
+        if (Mathf.Abs(DeltaX) > 0 && !script.cantMove)
         {
                 if(MoveCheck())
-                player.transform.position = new Vector3(player.transform.position.x + deltaX, player.transform.position.y);
+                player.transform.position = new Vector3(player.transform.position.x + DeltaX, player.transform.position.y);
                 else if(!MoveCheck() && !script.cantTransition)
                     SwitchToWallSlideState(); 
-                if (deltaX < 0 &&player.transform.localScale.x>0)
+                if (DeltaX < 0 &&player.transform.localScale.x>0)
                     Flip();
-                else if (deltaX > 0 && player.transform.localScale.x < 0)
+                else if (DeltaX > 0 && player.transform.localScale.x < 0)
                     Flip();
         }
        

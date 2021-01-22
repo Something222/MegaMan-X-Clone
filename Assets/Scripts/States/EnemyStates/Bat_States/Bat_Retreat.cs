@@ -9,7 +9,7 @@ public class Bat_Retreat :Bat_States
     private Transform currLocotion;
     private float distanceToSwitchState = 2f;
    
-   public Bat_Retreat(Bat_Enemy self):base(self)
+   public Bat_Retreat(Bat_Enemy self,GameObject player):base(self,player)
     {
 
     }
@@ -33,7 +33,7 @@ public class Bat_Retreat :Bat_States
 
         if(Vector2.Distance(currPos,destination)<distanceToSwitchState)
         {
-            nextState = new Bat_Asleep(self);
+            nextState = new Bat_Asleep(self,player);
             phase = Phase.EXIT;
         }
     }

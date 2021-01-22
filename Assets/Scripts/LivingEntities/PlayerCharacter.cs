@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerCharacter : LivingEntities
 {
     [SerializeField] private LayerMask platformLayerMask;
-    [SerializeField] new PlayerState currState;
+    [SerializeField] new public PlayerState currState;
 
     //Cached Variables
    [SerializeField]  private CapsuleCollider2D capsuleCollider;
@@ -148,7 +148,7 @@ public class PlayerCharacter : LivingEntities
     {
         while(true)
         {
-            Debug.Log(chargeLevel);
+           
             yield return new WaitForSeconds(chargeTime);
             if (chargeLevel < 2)
                 chargeLevel++;
@@ -176,9 +176,7 @@ public class PlayerCharacter : LivingEntities
     // Start is called before the first frame update
     protected override void Start()
     {
-        // Capsule = GetComponent<BoxCollider2D>();
-        // capsuleCollider = GetComponent<CapsuleCollider2D>();
-        // FeetCollider = GetComponent<BoxCollider2D>();
+      
         distToGround = CapsuleCollider.bounds.extents.y;
         groundChecker=new Vector3(CapsuleCollider.bounds.center.x-.2f, CapsuleCollider.bounds.center.y, CapsuleCollider.bounds.center.z);
         base.Start();
@@ -192,7 +190,7 @@ public class PlayerCharacter : LivingEntities
     void Update()
     {
        currState=(PlayerState)currState.Process();
-        Debug.Log(currState);
+
     }
 
     public override void Respawn()

@@ -13,8 +13,9 @@ public abstract class LivingEntities : MonoBehaviour
      public float dashSpeed = 2;
     [SerializeField]public Animator anim;
     [SerializeField] private float iFrames = .55f;
-
+    [SerializeField] private int damage = 10;
     public float MaxHealth { get => maxHealth; set => maxHealth = value; }
+    public int Damage { get => damage;  }
 
     protected virtual void Start()
     {
@@ -47,4 +48,13 @@ public abstract class LivingEntities : MonoBehaviour
         invicibility = false;
         health = maxHealth;
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Spawner")
+        {
+            gameObject.SetActive(false);
+        }
+    }
+
+
 }

@@ -8,11 +8,12 @@ public abstract class Bat_States :State
     protected GameObject player;
     protected Vector2 currPos;
     protected Bat_Enemy self;
-    
-   public Bat_States(Bat_Enemy self)
+
+   public Bat_States(Bat_Enemy self, GameObject player)
     {
         this.self = self;
-        player = GameObject.FindGameObjectWithTag("Player");
+        this.player = player;
+       
     }
     public override void Enter()
     {

@@ -9,7 +9,7 @@ using UnityEngine;
 public class Bat_Enemy : LivingEntities
 {
     //State
-   [SerializeField] private new Bat_States curState;
+   [SerializeField] private new Bat_States currState;
 
     //Collider Size Differences
     [SerializeField] private float awakeXColliderSize;
@@ -18,13 +18,15 @@ public class Bat_Enemy : LivingEntities
     [SerializeField] private float asleepYColliderSize;
 
     //Stats
-    [SerializeField] private int damage = 10;
+    
     [SerializeField] public int retreatRange = 10;
     [SerializeField] public float attackMoveSpeed = 3.5f;
     [SerializeField] public float retreatMoveSpeed = 4.5f;
 
     private Vector2 awakeColliderSize;
     private Vector2 asleepColliderSize;
+
+    private GameObject player;
 
     public Vector2 AwakeColliderSize => awakeColliderSize;
     public Vector2 AsleepColliderSize => asleepColliderSize;
@@ -55,39 +57,34 @@ public class Bat_Enemy : LivingEntities
         body = GetComponent<Rigidbody2D>();
         body.constraints = RigidbodyConstraints2D.FreezeAll;
         collider.size = asleepColliderSize;
-        curState = new Bat_Asleep(this);
+        player = FindObjectOfType<PlayerCharacter>().gameObject;
+        currState = new Bat_Asleep(this,player);
     }
 
     public override void Respawn()
     {
         base.Respawn();
-        curState = new Bat_Asleep(this);
+        currState = new Bat_Asleep(this,player);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        curState=(Bat_States)curState.Process();
-       // Debug.Log(curState);
+        currState=(Bat_States)currState.Process();
+     
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag=="Player")
+        if (collision.tag == "Player")
         {
-            curState = new Bat_Retreat(this);
-            collision.GetComponent<PlayerCharacter>().TakeDamage(damage);
+            currState = new Bat_Retreat(this,player);
+            collision.GetComponent<PlayerCharacter>().TakeDamage(Damage);
         }
-       
+
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if(collision.tag=="Spawner")
-        {
-            gameObject.SetActive(false);
-        }
-    }
+  
 
 }

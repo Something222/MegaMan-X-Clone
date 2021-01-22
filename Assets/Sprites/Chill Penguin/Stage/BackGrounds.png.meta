@@ -11,6 +11,9 @@ TextureImporter:
   - first:
       213: -9061151176590112452
     second: Outside_IceBlock_Ground
+  - first:
+      213: 3247190592129227163
+    second: Chill_Penguin_Background_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -126,6 +129,27 @@ TextureImporter:
       bones: []
       spriteID: d7be27473c8a16630800000000000000
       internalID: 3918598708214819709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill_Penguin_Background_2
+      rect:
+        serializedVersion: 2
+        x: 2842
+        y: 7
+        width: 1218
+        height: 535
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b995ad1a3a6501d20800000000000000
+      internalID: 3247190592129227163
       vertices: []
       indices: 
       edges: []

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bat_Attack : Bat_States
 {
 
-    public Bat_Attack(Bat_Enemy self) : base(self) { }
+    public Bat_Attack(Bat_Enemy self,GameObject player) : base(self,player) { }
 
     public override void Enter()
     {

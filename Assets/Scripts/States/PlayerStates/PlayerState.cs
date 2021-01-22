@@ -17,6 +17,8 @@ public abstract class PlayerState : State
     protected bool flippingRoutineRunning;
     protected float airToSlideBufferTimer = .2f;
 
+    public float DeltaX { get => deltaX;}
+    public float InputValueX { get => inputValueX; }
     public PlayerState(GameObject player, Animator anim, float inputValueX, bool facingRight, PlayerCharacter script)
     {
         this.inputValueX = inputValueX;
@@ -91,7 +93,7 @@ public abstract class PlayerState : State
         if (context.started)
         {
             script.StartCoroutine(AirToSlideBuffer());
-            player.GetComponent<Rigidbody2D>().velocity = new Vector2(deltaX, stats.jumpHeight);
+            player.GetComponent<Rigidbody2D>().velocity = new Vector2(DeltaX, stats.jumpHeight);
             SwitchToAirPhase(wasDashing);
         }
     }
@@ -185,7 +187,7 @@ public abstract class PlayerState : State
         script.cantMove =true;
         yield return new WaitForSeconds(.35f);
         script.cantMove = false;
-        rigidbody2D.velocity = new Vector2(deltaX, rigidbody2D.velocity.y);
+        rigidbody2D.velocity = new Vector2(DeltaX, rigidbody2D.velocity.y);
     }
 
     public IEnumerator AirToSlideBuffer()
@@ -209,7 +211,7 @@ public abstract class PlayerState : State
     protected void SwitchToGroundedState()
     {
        
-            nextState = new GroundedState(player, anim, deltaX, facingRight, script);
+            nextState = new GroundedState(player, anim, DeltaX, facingRight, script);
             this.phase = Phase.EXIT;
        
     }

@@ -99,13 +99,13 @@ public class DashState : PlayerState
     public void Move()
     {
         deltaX = inputValueX * stats.moveSpeed*stats.dashSpeed * Time.deltaTime;
-        if (Mathf.Abs(deltaX) > 0)
+        if (Mathf.Abs(DeltaX) > 0)
         {
             if(MoveCheckDash())
-            player.transform.position = new Vector3(player.transform.position.x + deltaX, player.transform.position.y);
-            if (deltaX < 0 && facingRight)
+            player.transform.position = new Vector3(player.transform.position.x + DeltaX, player.transform.position.y);
+            if (DeltaX < 0 && facingRight)
                 Flip();
-            else if (deltaX > 0 && !facingRight)
+            else if (DeltaX > 0 && !facingRight)
                 Flip();
         }
        

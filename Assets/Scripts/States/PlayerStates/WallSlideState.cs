@@ -92,11 +92,11 @@ public class WallSlideState : PlayerState
 
         deltaX = inputValueX * stats.moveSpeed * Time.deltaTime;
 
-        if (Mathf.Abs(deltaX) > 0)
+        if (Mathf.Abs(DeltaX) > 0)
         {
-          if(wallDirection && deltaX<0)
+          if(wallDirection && DeltaX<0)
                 SwitchToAirPhase(dashing);
-          else if(!wallDirection && deltaX>0)
+          else if(!wallDirection && DeltaX>0)
                 SwitchToAirPhase(dashing);
         }
 

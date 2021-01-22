@@ -43,15 +43,15 @@ public class GroundedState : PlayerState
     public void Move()
     {
             deltaX = inputValueX * stats.moveSpeed * Time.deltaTime;
-            if (Mathf.Abs(deltaX) > 0)
+            if (Mathf.Abs(DeltaX) > 0)
             {
             
-                 if (deltaX < 0 && player.transform.localScale.x > 0)
+                 if (DeltaX < 0 && player.transform.localScale.x > 0)
                   Flip();
-                 else if (deltaX > 0 && player.transform.localScale.x < 0)
+                 else if (DeltaX > 0 && player.transform.localScale.x < 0)
                   Flip();
                  if (MoveCheck())
-                  player.transform.position = new Vector3(player.transform.position.x + deltaX, player.transform.position.y);
+                  player.transform.position = new Vector3(player.transform.position.x + DeltaX, player.transform.position.y);
                  anim.SetBool("IsRunning", true);
             }
             else
@@ -65,7 +65,7 @@ public class GroundedState : PlayerState
     {
         if (context.started)
         {
-            if (Mathf.Abs(deltaX) > 0)
+            if (Mathf.Abs(DeltaX) > 0)
                 SwitchToDashState(true);
             else
                 SwitchToDashState(false);

@@ -6,7 +6,7 @@ public class Bat_Asleep : Bat_States
 {
     private float aggroRange=7f;
 
-    public Bat_Asleep(Bat_Enemy self) : base(self) { }
+    public Bat_Asleep(Bat_Enemy self, GameObject player) : base(self,player) { }
 
     public override void Enter()
     {
@@ -29,7 +29,7 @@ public class Bat_Asleep : Bat_States
     private void SwitchToAttackPhase()
     {
 
-        nextState = new Bat_Attack(self);
+        nextState = new Bat_Attack(self,player);
         phase = Phase.EXIT;
     }
 

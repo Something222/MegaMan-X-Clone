@@ -12,7 +12,7 @@ public class BasicPlayerBulletBehaviour : MonoBehaviour
         damage = startingDamage;
     }
     private void OnTriggerEnter2D(Collider2D other)
-    {
+    { 
         if (other.tag != "Spawner")
         {
             var isliving = other.GetComponent<LivingEntities>();

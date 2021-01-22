@@ -236,6 +236,9 @@ TextureImporter:
   - first:
       213: 4473234800628537358
     second: Chill Penguin PngNotTileMap_3
+  - first:
+      213: -7799799292790099695
+    second: Chill Penguin PngNotTileMap_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -339,7 +342,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1562
-        y: 51
+        y: 57
         width: 752
         height: 480
       alignment: 0
