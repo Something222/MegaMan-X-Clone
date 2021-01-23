@@ -5,7 +5,16 @@ using UnityEngine;
 public class Bat_Asleep : Bat_States
 {
     private float aggroRange=7f;
+    private static Bat_Asleep instance = null;
 
+    public static Bat_Asleep GetInstance(Bat_Enemy self, GameObject player)
+    {
+        if (instance == null)
+            instance = new Bat_Asleep(self, player);
+        else
+            instance.phase = Phase.ENTER;
+        return instance;
+    }
     public Bat_Asleep(Bat_Enemy self, GameObject player) : base(self,player) { }
 
     public override void Enter()
@@ -26,11 +35,6 @@ public class Bat_Asleep : Bat_States
      
     }
 
-    private void SwitchToAttackPhase()
-    {
 
-        nextState = new Bat_Attack(self,player);
-        phase = Phase.EXIT;
-    }
 
 }

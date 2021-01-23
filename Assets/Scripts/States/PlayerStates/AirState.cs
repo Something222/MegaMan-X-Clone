@@ -7,7 +7,25 @@ using UnityEngine.InputSystem;
 public class AirState :PlayerState
 {
     private bool wasDashing;
-   
+    private static AirState instance = null;
+
+    public static AirState GetInstance(GameObject player, Animator anim, float inputValueX, bool wasDashing, bool facingRight, PlayerCharacter script)
+    {
+        if(instance==null)
+        {
+            instance = new AirState(player, anim, inputValueX, wasDashing, facingRight, script);
+        }
+        else
+        {
+            instance.phase = Phase.ENTER;
+            instance.player = player;
+            instance.inputValueX = inputValueX;
+            instance.wasDashing = wasDashing;
+            instance.facingRight = facingRight;
+        }
+        return instance;
+    }
+
     public AirState(GameObject player, Animator anim,float inputValueX, bool wasDashing,bool facingRight,PlayerCharacter script)
         : base(player, anim, inputValueX,facingRight,script)
     {

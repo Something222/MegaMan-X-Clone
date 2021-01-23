@@ -181,7 +181,8 @@ public class PlayerCharacter : LivingEntities
         groundChecker=new Vector3(CapsuleCollider.bounds.center.x-.2f, CapsuleCollider.bounds.center.y, CapsuleCollider.bounds.center.z);
         base.Start();
         chargeLevel = 0;
-        currState = new GroundedState(gameObject, anim,0,true,this);
+        // currState = new GroundedState(gameObject, anim,0,true,this);
+        currState = GroundedState.GetInstance(gameObject, anim, 0, true, this);
         chargeParticleFX = GetComponentInChildren<ParticleSystem>();
       
     }
@@ -190,7 +191,7 @@ public class PlayerCharacter : LivingEntities
     void Update()
     {
        currState=(PlayerState)currState.Process();
-
+       
     }
 
     public override void Respawn()

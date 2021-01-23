@@ -9,7 +9,23 @@ public class WallSlideState : PlayerState
     private bool wallDirection;
     private bool dashing;
     private float wallJumpForce=5f;
-    
+    private static WallSlideState instance=null;
+
+    //we can try and convert to singleton pattern
+    public static WallSlideState GetInstance(GameObject player, Animator anim, float inputValueX, bool facingRight, PlayerCharacter script)
+    {
+        if(instance==null)
+        {
+            instance = new WallSlideState(player, anim, inputValueX, facingRight, script);
+        }
+        else
+        {
+            instance.inputValueX = inputValueX;
+            instance.facingRight = facingRight;
+        }
+        return instance;
+    }
+
     public WallSlideState(GameObject player, Animator anim, float inputValueX, bool facingRight, PlayerCharacter script) : base(player, anim, inputValueX, facingRight, script)
     {
 

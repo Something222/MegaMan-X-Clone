@@ -5,7 +5,24 @@ using UnityEngine.InputSystem;
 
 public class GroundedState : PlayerState
 {
-    //May want to a add IsGrounded to the animator state
+
+    private static GroundedState instance = null;
+
+    public static GroundedState GetInstance(GameObject player, Animator anim, float inputValueX, bool facingRight, PlayerCharacter script)
+    {
+        if (instance == null)
+            instance = new GroundedState(player, anim, inputValueX, facingRight, script);
+        else
+        {
+            instance.phase = Phase.ENTER;
+            instance.facingRight = facingRight;
+            instance.inputValueX = inputValueX;
+            instance.player = player;
+            instance.anim = anim;
+            instance.script = script;
+        }
+        return instance;
+    }
 
     public GroundedState(GameObject player,Animator anim,float inputValueX,bool facingRight,PlayerCharacter script)
         :base(player,anim, inputValueX,facingRight,script){}

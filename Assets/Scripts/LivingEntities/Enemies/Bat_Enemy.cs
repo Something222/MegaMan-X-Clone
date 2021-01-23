@@ -57,15 +57,17 @@ public class Bat_Enemy : LivingEntities
         body = GetComponent<Rigidbody2D>();
         body.constraints = RigidbodyConstraints2D.FreezeAll;
         collider.size = asleepColliderSize;
-        player = FindObjectOfType<PlayerCharacter>().gameObject;
-        currState = new Bat_Asleep(this,player);
+        currState = Bat_Asleep.GetInstance(this, player);
     }
 
     public override void Respawn()
     {
         base.Respawn();
-        currState = new Bat_Asleep(this,player);
-
+        moveSpeed = 3.5f;
+        if(player==null)
+        player = FindObjectOfType<PlayerCharacter>().gameObject;
+        currState = Bat_Asleep.GetInstance(this, player);
+        Debug.Log(currState);
     }
 
     // Update is called once per frame
@@ -79,7 +81,7 @@ public class Bat_Enemy : LivingEntities
     {
         if (collision.tag == "Player")
         {
-            currState = new Bat_Retreat(this,player);
+            currState = Bat_Retreat.GetInstance(this, player);
             collision.GetComponent<PlayerCharacter>().TakeDamage(Damage);
         }
 

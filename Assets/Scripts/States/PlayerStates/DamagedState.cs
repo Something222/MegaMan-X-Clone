@@ -6,8 +6,21 @@ using UnityEngine.InputSystem;
 public class DamagedState : PlayerState
 {
 
-    
+    private static DamagedState instance;
     private float recoilSpeed=3f;
+
+    public static DamagedState GetInstance(GameObject player, Animator anim, float inputValueX, bool facingRight, PlayerCharacter script)
+    {
+        if (instance == null)
+            instance = new DamagedState(player, anim, inputValueX, facingRight, script);
+        else
+        {
+            instance.phase = Phase.ENTER;
+            instance.facingRight = facingRight;
+            instance.inputValueX = inputValueX;
+        }
+        return instance;
+    }
     public DamagedState(GameObject player, Animator anim, float inputValueX, bool facingRight, PlayerCharacter script)
     : base(player, anim, inputValueX, facingRight, script)
     {
@@ -28,11 +41,13 @@ public class DamagedState : PlayerState
         rigidbody2D.velocity = new Vector2(0, 0);
         if (script.IsGrounded())
         {
-            nextState = new GroundedState(player, anim, inputValueX, facingRight, script);
+            //nextState = new GroundedState(player, anim, inputValueX, facingRight, script);
+            nextState = GroundedState.GetInstance(player, anim, inputValueX, facingRight, script);
         }
         else
         {
-            nextState = new AirState(player, anim, inputValueX, false, facingRight, script);
+            // nextState = new AirState(player, anim, inputValueX, false, facingRight, script);
+            nextState = AirState.GetInstance(player, anim, inputValueX, false, facingRight, script);
         }
        
 

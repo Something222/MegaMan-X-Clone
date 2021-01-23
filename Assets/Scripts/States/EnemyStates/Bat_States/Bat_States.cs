@@ -26,5 +26,10 @@ public abstract class Bat_States :State
         playerPos = player.transform.position;
         currPos = self.gameObject.transform.position;
     }
+    protected void SwitchToAttackPhase()
+    {
 
+        nextState = Bat_Attack.GetInstance(self, player);
+        phase = Phase.EXIT;
+    }
 }

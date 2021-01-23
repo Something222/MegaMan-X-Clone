@@ -8,6 +8,21 @@ public class DashState : PlayerState
     bool endRunning;
     private float dashTimer = 1f;
     private float extraBulletOffset=.5f;
+    private static DashState instance = null;
+
+    public static DashState GetInstance(GameObject player, Animator anim, float inputValueX, bool facingRight, PlayerCharacter script, bool endrunning)
+    {
+        if (instance == null)
+            instance = new DashState(player, anim, inputValueX, facingRight, script, endrunning);
+        else
+        {
+            instance.phase = Phase.ENTER;
+            instance.inputValueX = inputValueX;
+            instance.facingRight = facingRight;
+            instance.endRunning = endrunning;
+        }
+        return instance;
+    }
     public IEnumerator DashStop()
     {
         yield return new WaitForSeconds(dashTimer);
@@ -16,14 +31,10 @@ public class DashState : PlayerState
 
     private void SwitchToGroundedState()
     {
-     if(!endRunning)
+        if (!endRunning)
             inputValueX = 0;
-        nextState = new GroundedState(player, anim, inputValueX, facingRight, script);
+        nextState = GroundedState.GetInstance(player, anim, inputValueX, facingRight, script);
         phase = Phase.EXIT;
-
-    }
-    private void SwitchToAirState()
-    {
 
     }
 

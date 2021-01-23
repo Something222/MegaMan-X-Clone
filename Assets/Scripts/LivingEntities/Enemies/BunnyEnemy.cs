@@ -30,7 +30,7 @@ public class BunnyEnemy : LivingEntities
     void Update()
     {
         currState=(BunnyStates)currState.Process();
-        Debug.Log(currState);
+       
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

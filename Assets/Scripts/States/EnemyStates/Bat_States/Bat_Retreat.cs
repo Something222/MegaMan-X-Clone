@@ -8,7 +8,17 @@ public class Bat_Retreat :Bat_States
    private Vector2 destination;
     private Transform currLocotion;
     private float distanceToSwitchState = 2f;
-   
+    private static Bat_Retreat instance = null;
+
+    public static Bat_Retreat GetInstance(Bat_Enemy self, GameObject player)
+    {
+        if (instance == null)
+            instance = new Bat_Retreat(self, player);
+        else
+            instance.phase = Phase.ENTER;
+
+        return instance;
+    }
    public Bat_Retreat(Bat_Enemy self,GameObject player):base(self,player)
     {
 
@@ -33,7 +43,7 @@ public class Bat_Retreat :Bat_States
 
         if(Vector2.Distance(currPos,destination)<distanceToSwitchState)
         {
-            nextState = new Bat_Asleep(self,player);
+            nextState = Bat_Asleep.GetInstance(self, player);
             phase = Phase.EXIT;
         }
     }

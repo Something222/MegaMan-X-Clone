@@ -164,17 +164,7 @@ public abstract class PlayerState : State
         script.StartResetShooting();
     }
 
-    public void SwitchToDamagedState()
-    {
-        nextState = new DamagedState(player, anim, inputValueX, facingRight, script);
-        phase = Phase.EXIT;
-    }
-    protected void SwitchToDashState(bool wasRunning)
-    {
-        //anim.SetBool("IsRunning", false);
-        nextState = new DashState(player, anim, inputValueX, facingRight, script, wasRunning);
-        phase = Phase.EXIT;
-    }
+  
     public IEnumerator flipRoutine()
     {
         flippingRoutineRunning = true;
@@ -197,21 +187,37 @@ public abstract class PlayerState : State
         script.cantTransition = false;
     }
 
+    public void SwitchToDamagedState()
+    {
+        // nextState = new DamagedState(player, anim, inputValueX, facingRight, script);
+        nextState = DamagedState.GetInstance(player, anim, inputValueX, facingRight, script);
+        phase = Phase.EXIT;
+    }
+    protected void SwitchToDashState(bool wasRunning)
+    {
+        //anim.SetBool("IsRunning", false);
+        // nextState = new DashState(player, anim, inputValueX, facingRight, script, wasRunning);\
+        nextState = DashState.GetInstance(player, anim, inputValueX, facingRight, script, wasRunning);
+        phase = Phase.EXIT;
+    }
     protected void SwitchToAirPhase(bool dash)
     {
-        nextState = new AirState(player, anim, inputValueX, dash, facingRight, script);
+        // nextState = new AirState(player, anim, inputValueX, dash, facingRight, script);
+        nextState = AirState.GetInstance(player, anim, inputValueX, dash, facingRight, script);
         phase = Phase.EXIT;
     }
     protected void SwitchToWallSlideState()
     {
-        nextState = new WallSlideState(player, anim, inputValueX, facingRight, script);
+        // nextState = new WallSlideState(player, anim, inputValueX, facingRight, script);
+        nextState = WallSlideState.GetInstance(player, anim, inputValueX, facingRight, script);
         phase = Phase.EXIT;
 
     }
     protected void SwitchToGroundedState()
     {
-       
-            nextState = new GroundedState(player, anim, DeltaX, facingRight, script);
+
+        // nextState = new GroundedState(player, anim, DeltaX, facingRight, script);
+        nextState = GroundedState.GetInstance(player, anim, DeltaX, facingRight, script);
             this.phase = Phase.EXIT;
        
     }

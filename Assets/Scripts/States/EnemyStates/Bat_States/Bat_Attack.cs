@@ -4,6 +4,17 @@ using UnityEngine;
 
 public class Bat_Attack : Bat_States
 {
+    private static Bat_Attack instance = null;
+
+
+    public static Bat_Attack GetInstance(Bat_Enemy self, GameObject player)
+    {
+        if (instance == null)
+            instance = new Bat_Attack(self, player);
+        else
+            instance.phase = Phase.ENTER;
+        return instance;
+    }
 
     public Bat_Attack(Bat_Enemy self,GameObject player) : base(self,player) { }
 

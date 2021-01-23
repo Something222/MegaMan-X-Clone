@@ -4,16 +4,21 @@ using UnityEngine;
 
 public abstract class LivingEntities : MonoBehaviour
 {
+
+    //Stats
     [SerializeField] public float health=100;
     [SerializeField]private float maxHealth;
     [SerializeField]public float moveSpeed=1f;
     [SerializeField] public State currState;
     [SerializeField] public float jumpHeight=5;
-    public bool invicibility = false;
-     public float dashSpeed = 2;
-    [SerializeField]public Animator anim;
     [SerializeField] private float iFrames = .55f;
     [SerializeField] private int damage = 10;
+    public bool invicibility = false;
+     public float dashSpeed = 2;
+
+//cached Fields
+    [SerializeField]public Animator anim;
+   
     public float MaxHealth { get => maxHealth; set => maxHealth = value; }
     public int Damage { get => damage;  }
 
