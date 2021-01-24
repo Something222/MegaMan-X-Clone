@@ -15,12 +15,14 @@ public abstract class LivingEntities : MonoBehaviour
     [SerializeField] private int damage = 10;
     public bool invicibility = false;
      public float dashSpeed = 2;
+    [SerializeField] private LayerMask platformLayerMask;
 
 //cached Fields
     [SerializeField]public Animator anim;
    
     public float MaxHealth { get => maxHealth; set => maxHealth = value; }
     public int Damage { get => damage;  }
+    public LayerMask PlatformLayerMask { get => platformLayerMask;  }
 
     protected virtual void Start()
     {

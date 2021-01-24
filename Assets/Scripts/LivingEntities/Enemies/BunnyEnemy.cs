@@ -10,16 +10,17 @@ public class BunnyEnemy : LivingEntities
     
     //GroundCheckFields
     [SerializeField] private float heightCheck;
-    [SerializeField] private LayerMask layerMask;
+   
 
     //cachedfields
     private Animator anim;
     private PlayerCharacter player;
 
-  
+    public float HeightCheck { get => heightCheck; }
 
     void Start()
     {
+        base.Start();
         player = FindObjectOfType<PlayerCharacter>();
         anim = GetComponent<Animator>();
         currState = new BunnyIdle(this, anim,player);
@@ -41,17 +42,6 @@ public class BunnyEnemy : LivingEntities
         }
     }
 
-    public virtual bool IsGrounded(CapsuleCollider2D capsuleCollider)
-    {
-
-        RaycastHit2D rayCastHit = Physics2D.BoxCast(capsuleCollider.bounds.center, capsuleCollider.bounds.size, 0, Vector2.down, heightCheck, layerMask);
-
-        if (rayCastHit.collider != null)
-        {
-            return true;
-        }
-        else return false;
-
-    }
+  
 
 }

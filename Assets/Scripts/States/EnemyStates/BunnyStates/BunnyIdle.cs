@@ -18,7 +18,7 @@ public class BunnyIdle : BunnyStates
 
     public override void Update()
     {
-        TrackPlayer();
+        EnemyFunctions.TrackPlayer(player,self.gameObject);
     }
 
     public override void Exit()
@@ -36,16 +36,10 @@ public class BunnyIdle : BunnyStates
             nextState = new BunnyMoving(self, anim, player);
 
         //testing 
-        nextState = new BunnyAttacking(self, anim, player);
+        nextState = new BunnyMoving(self, anim, player);
         phase = Phase.EXIT;
     }
-    private void TrackPlayer()
-    {
-        if (player.transform.position.x < self.gameObject.transform.position.x)
-            self.gameObject.transform.localScale = new Vector2(1, 1);
-        else
-            self.gameObject.transform.localScale = new Vector2(-1, 1);
-    }
+
 
 
 }

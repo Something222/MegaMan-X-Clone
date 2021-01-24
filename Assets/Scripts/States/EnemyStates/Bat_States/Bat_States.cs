@@ -29,7 +29,8 @@ public abstract class Bat_States :State
     protected void SwitchToAttackPhase()
     {
 
-        nextState = Bat_Attack.GetInstance(self, player);
+        //nextState = Bat_Attack.GetInstance(self, player);
+        nextState = new Bat_Attack(self, player);
         phase = Phase.EXIT;
     }
 }

@@ -5,6 +5,9 @@ using UnityEngine.InputSystem;
 
 public abstract class PlayerState : State
 {
+    //maybe better just to have these in the character script
+//ya probably would have been better to stick all the variables on one script but oh well
+//live you learn
     protected bool facingRight = true;
     protected float inputValueX;
     protected float deltaX;
@@ -29,6 +32,7 @@ public abstract class PlayerState : State
         this.script = script;
         stats = player.GetComponent<LivingEntities>();
     }
+    //checks when moving if a wall is infront if so stops moving to prevent clipping
     public bool MoveCheck()
     {
         RaycastHit2D hit;
@@ -45,6 +49,10 @@ public abstract class PlayerState : State
 
         return true;
     }
+    /// <summary>
+    /// Same concept as move check slightly different vsalues with dash
+    /// </summary>
+    /// <returns></returns>
     public bool MoveCheckDash()
     {
         RaycastHit2D hit;
