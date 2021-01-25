@@ -5,13 +5,13 @@ using UnityEngine.InputSystem;
 
 public class PlayerCharacter : LivingEntities
 {
-   
+    [SerializeField] private LayerMask platformLayerMask;
     [SerializeField] new public PlayerState currState;
 
     //Cached Variables
-    [SerializeField]  private CapsuleCollider2D capsuleCollider;
+   [SerializeField]  private CapsuleCollider2D capsuleCollider;
     [SerializeField]private CapsuleCollider2D FeetCollider;
-    [SerializeField] private ParticleSystem chargeParticleFX;
+   [SerializeField] private ParticleSystem chargeParticleFX;
 
 
     //Movement Variables
@@ -58,7 +58,7 @@ public class PlayerCharacter : LivingEntities
     public float DistToGround { get => distToGround; }
     public float BulletSpeed { get => bulletSpeed; }
     public float BulletXOffset { get => bulletXOffset; set => bulletXOffset = value; }
-  
+    public LayerMask PlatformLayerMask { get => platformLayerMask; }
     public CapsuleCollider2D CapsuleCollider { get => capsuleCollider;}
     public float JumpingBulletYOffset { get => jumpingBulletYOffset; }
     public ParticleSystem ChargeParticleFX { get => chargeParticleFX; set => chargeParticleFX = value; }
@@ -173,7 +173,7 @@ public class PlayerCharacter : LivingEntities
         dashTransitioning = false;
     }
  
-
+    // Start is called before the first frame update
     protected override void Start()
     {
       
@@ -187,6 +187,7 @@ public class PlayerCharacter : LivingEntities
       
     }
 
+    // Update is called once per frame
     void Update()
     {
        currState=(PlayerState)currState.Process();

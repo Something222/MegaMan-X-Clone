@@ -5,8 +5,8 @@ using UnityEngine;
 public class Bat_Retreat :Bat_States
 {
 
-    private Vector2 destination;
-    private Transform currLocation;
+   private Vector2 destination;
+    private Transform currLocotion;
     private float distanceToSwitchState = 2f;
     private static Bat_Retreat instance = null;
 
@@ -27,30 +27,25 @@ public class Bat_Retreat :Bat_States
     public override void Enter()
     {
         self.moveSpeed = self.retreatMoveSpeed;
-        currLocation = self.transform;
-        float xDestination = Random.Range(currLocation.position.x - self.retreatRange, currLocation.position.x + self.retreatRange);
-        float yDestination = Random.Range(currLocation.position.y - self.retreatRange, currLocation.position.y + self.retreatRange);
+        currLocotion = self.transform;
+        float xDestination = Random.Range(currLocotion.position.x - self.retreatRange, currLocotion.position.x + self.retreatRange);
+        float yDestination = Random.Range(currLocotion.position.y - self.retreatRange, currLocotion.position.y + self.retreatRange);
 
         destination = new Vector2(xDestination, yDestination);
 
         base.Enter();
     }
-    private void CheckToRest()
-    {
-        self.transform.position = Vector2.MoveTowards(currPos, destination, self.moveSpeed * Time.deltaTime);
 
-        if (Vector2.Distance(currPos, destination) < distanceToSwitchState)
-        {
-            //nextState = Bat_Asleep.GetInstance(self, player);
-            nextState = new Bat_Asleep(self, player);
-            phase = Phase.EXIT;
-        }
-    }
     public override void Update()
     {
         base.Update();
-        CheckToRest();
+        self.transform.position = Vector2.MoveTowards(currPos, destination, self.moveSpeed * Time.deltaTime);
+
+        if(Vector2.Distance(currPos,destination)<distanceToSwitchState)
+        {
+            nextState = Bat_Asleep.GetInstance(self, player);
+            phase = Phase.EXIT;
+        }
     }
 
-  
 }

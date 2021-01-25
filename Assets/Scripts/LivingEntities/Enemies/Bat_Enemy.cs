@@ -8,12 +8,6 @@ using UnityEngine;
 
 public class Bat_Enemy : LivingEntities
 {
-    //so the idea of singlestates doesnt really work with enemies because we will have multiple
-    //enemies and thus states at once so singletons dont work
-    //except with x and bosses.
-    // Unless i make a like pooling system for the states but thatll get to clutered for not much reward
-
-
     //State
    [SerializeField] private new Bat_States currState;
 
@@ -63,8 +57,7 @@ public class Bat_Enemy : LivingEntities
         body = GetComponent<Rigidbody2D>();
         body.constraints = RigidbodyConstraints2D.FreezeAll;
         collider.size = asleepColliderSize;
-        currState = new Bat_Asleep(this, player);
-       // currState = Bat_Asleep.GetInstance(this, player);
+        currState = Bat_Asleep.GetInstance(this, player);
     }
 
     public override void Respawn()
@@ -73,9 +66,14 @@ public class Bat_Enemy : LivingEntities
         moveSpeed = 3.5f;
         if(player==null)
         player = FindObjectOfType<PlayerCharacter>().gameObject;
+<<<<<<< HEAD
         //  currState = Bat_Asleep.GetInstance(this, player);
         currState = new Bat_Asleep(this, player);
     
+=======
+        currState = Bat_Asleep.GetInstance(this, player);
+        Debug.Log(currState);
+>>>>>>> parent of 41106da... Little bit of refactoring
     }
 
     // Update is called once per frame
@@ -89,8 +87,7 @@ public class Bat_Enemy : LivingEntities
     {
         if (collision.tag == "Player")
         {
-            // currState = Bat_Retreat.GetInstance(this, player);
-            currState = new Bat_Retreat(this, player);
+            currState = Bat_Retreat.GetInstance(this, player);
             collision.GetComponent<PlayerCharacter>().TakeDamage(Damage);
         }
 
