@@ -66,14 +66,13 @@ public class Bat_Enemy : LivingEntities
         moveSpeed = 3.5f;
         if(player==null)
         player = FindObjectOfType<PlayerCharacter>().gameObject;
-<<<<<<< HEAD
-        //  currState = Bat_Asleep.GetInstance(this, player);
+
         currState = new Bat_Asleep(this, player);
     
-=======
+
         currState = Bat_Asleep.GetInstance(this, player);
         Debug.Log(currState);
->>>>>>> parent of 41106da... Little bit of refactoring
+
     }
 
     // Update is called once per frame

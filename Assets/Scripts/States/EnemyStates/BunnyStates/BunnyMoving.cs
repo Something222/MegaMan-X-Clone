@@ -15,30 +15,20 @@ public class BunnyMoving : BunnyStates
         yield return new WaitForSeconds(switchTimer);
         canSwitch = true;
     }
-    private void Jump()
-    {
-        if(self.gameObject.transform.localScale.x==1)
-        {
-            self.GetComponent<Rigidbody2D>().AddForce(new Vector2(-self.moveSpeed, self.jumpHeight));
-        }
-        else if (self.gameObject.transform.localScale.x == -1)
-        {
-            self.GetComponent<Rigidbody2D>().AddForce(new Vector2(self.moveSpeed, self.jumpHeight));
-        }
-    }
-
+  
     public override void Enter()
     {
         anim.SetTrigger("Jump");
         capsuleCollider = self.GetComponent<CapsuleCollider2D>();
         self.StartCoroutine(Switching());
-        Jump();
+        EnemyFunctions.Jump(self, self.moveSpeed, self.jumpHeight);
         base.Enter();
     }
 
     public override void Update()
     {
-        if (canSwitch && self.IsGrounded(capsuleCollider))
+
+        if (canSwitch && EnemyFunctions.IsGrounded(capsuleCollider,self.HeightCheck,self.PlatformLayerMask))
         {
             nextState = new BunnyIdle(self, anim, player);
             anim.SetBool("Idle", true);
