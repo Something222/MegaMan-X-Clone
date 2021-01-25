@@ -38,12 +38,12 @@ public class BunnyMoving : BunnyStates
 
     public override void Update()
     {
-<<<<<<< HEAD
+
 
         if (canSwitch && EnemyFunctions.IsGrounded(capsuleCollider,self.HeightCheck,self.PlatformLayerMask))
-=======
+
         if (canSwitch && self.IsGrounded(capsuleCollider))
->>>>>>> parent of 41106da... Little bit of refactoring
+
         {
             nextState = new BunnyIdle(self, anim, player);
             anim.SetBool("Idle", true);

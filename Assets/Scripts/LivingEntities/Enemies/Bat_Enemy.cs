@@ -69,15 +69,11 @@ public class Bat_Enemy : LivingEntities
 
 
         currState = new Bat_Asleep(this, player);
-<<<<<<< HEAD
-    
-
         currState = Bat_Asleep.GetInstance(this, player);
         Debug.Log(currState);
 
-=======
         Debug.Log(currState);
->>>>>>> parent of bba94b1... ok
+
     }
 
     // Update is called once per frame
