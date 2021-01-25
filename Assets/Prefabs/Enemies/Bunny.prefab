@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4835375909707502618}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -112,7 +112,7 @@ Animator:
   m_GameObject: {fileID: 4835375909707502618}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fe39f20d3983a914ebc9c79a6e83dc58, type: 2}
+  m_Controller: {fileID: 9100000, guid: 551d3fbba1d3ab944b351b10da44e03f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -158,13 +158,13 @@ MonoBehaviour:
   maxHealth: 0
   moveSpeed: 350
   jumpHeight: 350
-  invicibility: 0
-  dashSpeed: 2
-  anim: {fileID: 0}
   iFrames: 0.55
   damage: 2
-  bullet: {fileID: 0}
-  heightCheck: 0.5
-  layerMask:
+  invicibility: 0
+  dashSpeed: 2
+  platformLayerMask:
     serializedVersion: 2
     m_Bits: 256
+  anim: {fileID: 0}
+  bullet: {fileID: 0}
+  heightCheck: 0.5

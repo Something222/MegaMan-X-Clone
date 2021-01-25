@@ -75,7 +75,7 @@ public class Bat_Enemy : LivingEntities
         player = FindObjectOfType<PlayerCharacter>().gameObject;
         //  currState = Bat_Asleep.GetInstance(this, player);
         currState = new Bat_Asleep(this, player);
-        Debug.Log(currState);
+    
     }
 
     // Update is called once per frame
