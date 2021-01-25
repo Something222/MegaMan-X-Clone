@@ -18,7 +18,7 @@ public class PlayerCharacter : LivingEntities
     Vector3 groundChecker;
     public bool cantMove;
     public bool cantTransition;
-    [SerializeField] private float heightCheck;
+  
     private float distToGround;
 
     //ColliderSizes capsule
@@ -72,18 +72,13 @@ public class PlayerCharacter : LivingEntities
     public float DashColliderSizeX { get => dashColliderSizeX; }
     public float DashColliderSizeY { get => dashColliderSizeY;  }
 
-    public void TakeDamage(int damage)
+    public override void TakeDamage(int damage)
     {
-        if (!invicibility)
-        {
-            invicibility = true;
-            StartCoroutine(TurnOffInvicibility());
-            health -= damage;
-
+        base.TakeDamage(damage);
+     
             if (health > 0)
                 currState.SwitchToDamagedState();
-
-        }
+   
        // else
             //die();
     }
@@ -122,7 +117,7 @@ public class PlayerCharacter : LivingEntities
     public virtual bool IsGrounded()
     {
       
-        RaycastHit2D rayCastHit = Physics2D.BoxCast(CapsuleCollider.bounds.center, CapsuleCollider.bounds.size,0,Vector2.down,heightCheck,PlatformLayerMask);
+        RaycastHit2D rayCastHit = Physics2D.BoxCast(CapsuleCollider.bounds.center, CapsuleCollider.bounds.size,0,Vector2.down,HeightCheck,PlatformLayerMask);
 
         if (rayCastHit.collider != null)
         {
@@ -173,7 +168,7 @@ public class PlayerCharacter : LivingEntities
         dashTransitioning = false;
     }
  
-    // Start is called before the first frame update
+
     protected override void Start()
     {
       
@@ -187,7 +182,7 @@ public class PlayerCharacter : LivingEntities
       
     }
 
-    // Update is called once per frame
+
     void Update()
     {
        currState=(PlayerState)currState.Process();

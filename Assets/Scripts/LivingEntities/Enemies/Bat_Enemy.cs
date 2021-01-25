@@ -69,7 +69,10 @@ public class Bat_Enemy : LivingEntities
 
 
         currState = new Bat_Asleep(this, player);
+
         currState = Bat_Asleep.GetInstance(this, player);
+        Debug.Log(currState);
+
         Debug.Log(currState);
 
         Debug.Log(currState);

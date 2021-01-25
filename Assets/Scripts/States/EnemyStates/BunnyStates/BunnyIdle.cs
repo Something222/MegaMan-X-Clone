@@ -10,6 +10,7 @@ public class BunnyIdle : BunnyStates
 
     public override void Enter()
     {
+        self.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
         anim.SetBool("Idle", true);
         self.StartCoroutine(Wait());
         base.Enter();
@@ -18,7 +19,7 @@ public class BunnyIdle : BunnyStates
 
     public override void Update()
     {
-        TrackPlayer();
+        EnemyFunctions.TrackPlayer(player.gameObject, self.gameObject);
     }
 
     public override void Exit()
@@ -30,22 +31,14 @@ public class BunnyIdle : BunnyStates
     private IEnumerator Wait()
     {
         yield return new WaitForSeconds(idleTimer);
-        if (Random.Range(0, 1) == 1)
+        if (Random.Range(0, 2) == 1)
             nextState = new BunnyAttacking(self, anim, player);
         else
             nextState = new BunnyMoving(self, anim, player);
 
-        //testing 
-        nextState = new BunnyAttacking(self, anim, player);
         phase = Phase.EXIT;
     }
-    private void TrackPlayer()
-    {
-        if (player.transform.position.x < self.gameObject.transform.position.x)
-            self.gameObject.transform.localScale = new Vector2(1, 1);
-        else
-            self.gameObject.transform.localScale = new Vector2(-1, 1);
-    }
+ 
 
 
 }

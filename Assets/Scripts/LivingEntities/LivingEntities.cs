@@ -16,11 +16,16 @@ public abstract class LivingEntities : MonoBehaviour
     public bool invicibility = false;
      public float dashSpeed = 2;
 
-//cached Fields
+    [SerializeField] private float heightCheck;
+    [SerializeField] private LayerMask layerMask;
+
+    //cached Fields
     [SerializeField]public Animator anim;
    
     public float MaxHealth { get => maxHealth; set => maxHealth = value; }
     public int Damage { get => damage;  }
+    public float HeightCheck { get => heightCheck; }
+    public LayerMask PlatformLayerMask { get => layerMask;}
 
     protected virtual void Start()
     {
@@ -60,6 +65,15 @@ public abstract class LivingEntities : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
+    public virtual void TakeDamage(int damage)
+    {
+        if (!invicibility)
+        {
+            invicibility = true;
+            StartCoroutine(TurnOffInvicibility());
+            health -= damage;
 
+        }
+    }
 
 }

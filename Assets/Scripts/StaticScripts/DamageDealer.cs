@@ -8,9 +8,7 @@ public static class DamageDealer
     {
         if (!other.invicibility)
         {
-            other.invicibility = true;
-            other.StartCoroutine(other.TurnOffInvicibility());
-            other.health -= damage;
+            other.TakeDamage((int)damage);         
             if (other.health <= 0)
             {
                 other.Die();
@@ -23,10 +21,8 @@ public static class DamageDealer
         float returningDamage=0;
         if (!other.invicibility)
         {
-            other.invicibility = true;
-            other.StartCoroutine(other.TurnOffInvicibility());
             returningDamage = damage - other.health;
-            other.health -= damage;
+            other.TakeDamage((int)damage);
             if (other.health <= 0)
             {
                 other.Die();

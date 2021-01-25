@@ -20,6 +20,7 @@ public class WallSlideState : PlayerState
         }
         else
         {
+            instance.phase = Phase.ENTER;
             instance.inputValueX = inputValueX;
             instance.facingRight = facingRight;
         }

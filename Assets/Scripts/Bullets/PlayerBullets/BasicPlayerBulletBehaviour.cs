@@ -6,6 +6,10 @@ public class BasicPlayerBulletBehaviour : MonoBehaviour
 {
     [SerializeField] private float damage;
     [SerializeField]private float startingDamage;
+    [SerializeField] private float moveSpeed;
+
+    public float MoveSpeed { get => moveSpeed; }
+
     // Start is called before the first frame update
     private void Start()
     {
