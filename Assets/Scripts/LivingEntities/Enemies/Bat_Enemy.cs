@@ -67,6 +67,7 @@ public class Bat_Enemy : LivingEntities
         if(player==null)
         player = FindObjectOfType<PlayerCharacter>().gameObject;
 
+
         currState = new Bat_Asleep(this, player);
     
 
