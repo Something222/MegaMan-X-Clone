@@ -38,7 +38,5 @@ public class BunnyIdle : BunnyStates
 
         phase = Phase.EXIT;
     }
- 
-
 
 }
